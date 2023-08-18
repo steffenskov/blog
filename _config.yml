@@ -14,7 +14,7 @@ kramdown:
     default_lang: csharp
 
 # Build settings
-theme: jekyll-theme-architect
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
