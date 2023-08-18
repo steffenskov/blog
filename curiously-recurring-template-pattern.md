@@ -1,7 +1,7 @@
-```
+---
 layout: post
 title: Curiously Recurring Template Pattern
-```
+---
 
 Try saying that out loud 3 times rapidly :-D
 
