@@ -14,7 +14,7 @@ kramdown:
     default_lang: csharp
 
 # Build settings
-theme: just-the-docs
+#theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
