@@ -1,5 +1,7 @@
-
-Curiously Recurring Template Pattern
+---
+layout: post
+title: Curiously Recurring Template Pattern
+---
 
 Try saying that out loud 3 times rapidly :-D
 
@@ -14,7 +16,7 @@ where TSelf : INumber<TSelf>?
 }
 ```
   
-which means e.g. double now has this definition:
+which means e.g. `double` now has this definition:
 ```
 public struct double : INumber<double>
 {
