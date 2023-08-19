@@ -1,8 +1,8 @@
 # Site settings
-title: Steffen Skov
+title: My C# Blog
 description: A blog about C# programming and development.
-url: https://steffenskov.github.io/blog
-baseurl: ""
+url: https://yourblog.com
+baseurl: "" # If your site is hosted in a subdirectory, specify it here, e.g., "/blog"
 permalink: /:title/
 
 # Markdown settings
@@ -14,11 +14,12 @@ kramdown:
     default_lang: csharp
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima # You can replace this with the Jekyll theme of your choice
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  # Add any other plugins you might need
 
 # Code highlighting
 highlighter: rouge
@@ -28,7 +29,11 @@ rouge:
 
 # Exclude files from processing
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
   - vendor
+  # Add any other exclusions you need
 
 # Pagination
 paginate: 5
@@ -38,4 +43,3 @@ paginate_path: "/page/:num/"
 default_category: General
 category_dir: category
 tag_dir: tag
-
