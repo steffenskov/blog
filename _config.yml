@@ -1,8 +1,8 @@
 # Site settings
 title: My C# Blog
 description: A blog about C# programming and development.
-url: https://yourblog.com
-baseurl: "" # If your site is hosted in a subdirectory, specify it here, e.g., "/blog"
+url: https://steffenskov.github.io
+baseurl: "/blog"
 permalink: /:title/
 
 # Markdown settings
