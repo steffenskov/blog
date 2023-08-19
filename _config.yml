@@ -29,9 +29,6 @@ rouge:
 
 # Exclude files from processing
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
   - vendor
   # Add any other exclusions you need
 
@@ -43,3 +40,10 @@ paginate_path: "/page/:num/"
 default_category: General
 category_dir: category
 tag_dir: tag
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "post"
