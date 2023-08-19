@@ -1,8 +1,8 @@
 # Site settings
 title: Steffen Skov
 description: A blog about C# programming and development.
-url: https://steffenskov.github.io
-baseurl: /blog
+url: https://steffenskov.github.io/blog
+baseurl: ""
 permalink: /blog/:title/
 
 # Markdown settings
