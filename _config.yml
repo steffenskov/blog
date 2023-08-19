@@ -14,7 +14,7 @@ kramdown:
     default_lang: csharp
 
 # Build settings
-theme: jekyll-theme-midnight # You can replace this with the Jekyll theme of your choice
+theme: minima # You can replace this with the Jekyll theme of your choice
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
