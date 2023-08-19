@@ -3,7 +3,7 @@ title: Steffen Skov
 description: A blog about C# programming and development.
 url: https://steffenskov.github.io
 baseurl: /blog
-permalink: /blog/:title/
+permalink: /:title/
 
 # Markdown settings
 markdown: kramdown
