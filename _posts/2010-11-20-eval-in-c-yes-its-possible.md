@@ -1,5 +1,5 @@
 ---
-title: "'eval' in C#, yes it's possible"
+title: "&quot;eval&quot; in C#, yes it's possible"
 layout: post
 ---
 
@@ -28,6 +28,7 @@ I knew my system would only run in-house, and only be configured by skilled prog
 With that out of the way, I assume you actually need the eval function for C#, so here’s the code:
 
 ```
+{% raw %}
 using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
@@ -93,6 +94,7 @@ namespace {1}
 		return result.ToString();
 	}
 }
+{% endraw %}
 ```
 
 Quite a lot of code there 😀
