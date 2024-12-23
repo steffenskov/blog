@@ -58,15 +58,15 @@ You'll want to update the IP, as well as all uppercase words with your relevant 
 Do note the line above contains more than just our `x-systemd.after` flag, feel free to adjust the flags however you see fit.
 
 If you're curious here's what each part does:
-- //10.0.0.20/SHARE: Remote path to mount
-- /home/USERNAME/SHARE: Local path to mount it to
-- cifs: Protocol used for mounting the network share, CIFS (aka. SMB these days) is the protocol used by Windows, and is often the default on NAS devices for wider client support. You could use NFS as well on Linux, but in most benchmarks I've seen CIFS/SMB actually comes out on top.
-- uid: username of your local linux user
-- gid: group of your local linux user (usually the same as your username)
-- username: username used to authenticate with the remote target
-- password: password used to authenticate with the remote target
-- iocharset: configures the encoding used for the network share, `utf8` is a safe default that should for most people.
-- nobrl: disables sending byte range lock requests to the server. Without this LibreOffice has a tendency (at least for me) to screw up when attempting to save files.
-- x-systemd.after: We already covered this, it instructs the mount not to happen until after our service has started.
-- vers: Version of SMB to use, I'd recommend going with 3.0 if your remote target supports it.
-- 0 0: The first 0 indicates whether the file system should be "dumped" by the dump backup program (if installed), the second one is the order `fsck` should check the filesystem in. It can be 0 (don't check) or 2 (check, after the root filesystem)
+- `//10.0.0.20/SHARE`: Remote path to mount
+- `/home/USERNAME/SHARE`: Local path to mount it to
+- `cifs`: Protocol used for mounting the network share, CIFS (aka. SMB these days) is the protocol used by Windows, and is often the default on NAS devices for wider client support. You could use NFS as well on Linux, but in most benchmarks I've seen CIFS/SMB actually comes out on top.
+- `uid`: username of your local linux user
+- `gid`: group of your local linux user (usually the same as your username)
+- `username`: username used to authenticate with the remote target
+- `password`: password used to authenticate with the remote target
+- `iocharset`: configures the encoding used for the network share, `utf8` is a safe default that should for most people.
+- `nobrl`: disables sending byte range lock requests to the server. Without this LibreOffice has a tendency (at least for me) to screw up when attempting to save files.
+- `x-systemd.after`: We already covered this, it instructs the mount not to happen until after our service has started.
+- `vers`: Version of SMB to use, I'd recommend going with 3.0 if your remote target supports it.
+- `0 0`: The first 0 indicates whether the file system should be "dumped" by the dump backup program (if installed), the second one is the order `fsck` should check the filesystem in. It can be 0 (don't check) or 2 (check, after the root filesystem)
