@@ -1,5 +1,5 @@
 ---
-title: '&#8220;eval&#8221; in C#, yes it&#8217;s possible'
+title: "&quot;eval&quot; in C#, yes it's possible"
 layout: post
 ---
 
