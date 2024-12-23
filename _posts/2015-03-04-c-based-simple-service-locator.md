@@ -5,11 +5,11 @@ layout: post
 
 Before you read any further I strongly suggest downloading the source file and opening it in Visual Studio (or whichever environment you prefer).
 
-[Download ServiceLocator.zip](https://www.nuget.org/packages/Ckode.ServiceLocator/)
+[Download ServiceLocator](https://www.nuget.org/packages/Ckode.ServiceLocator/)
 
 I’ve always loved the [Service locator pattern](http://en.wikipedia.org/wiki/Service_locator_pattern) – why ? Because it requires so little maintenance, and it’s a very crucial point if you want somewhat automatic dependency injection.
 
-As you can read in my blog post “[Staying DRY: Mind those switch statements](http://www.ckode.dk/programming/staying-dry-mind-those-switch-statements/)” a service locator can replace cumbersome multiple switch statements which require each one to be changed whenever a new case comes along.
+As you can read in my blog post “[Staying DRY: Mind those switch statements](https://steffenskov.github.io/blog/2012/02/12/staying-dry-mind-those-switch-statements.html)” a service locator can replace cumbersome multiple switch statements which require each one to be changed whenever a new case comes along.
 
 In that article I’ve gone with an extremely simple approach, which used [Reflection](https://msdn.microsoft.com/en-us/library/f7ykdhsy%28v=vs.110%29.aspx) to find whatever type implemented a given interface and contained a given key, and ran [Activator.CreateInstance](https://msdn.microsoft.com/en-us/library/system.activator.createinstance%28v=vs.110%29.aspx) to give me an instance. I then cached that instance for quick lookups later.
 

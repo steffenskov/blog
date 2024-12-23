@@ -32,8 +32,8 @@ exclude:
   # Add any other exclusions you need
 
 # Pagination
-paginate: 5
-paginate_path: "/page/:num/"
+#paginate: 5
+#paginate_path: "/page/:num/"
 
 # Categories and tags
 default_category: General
