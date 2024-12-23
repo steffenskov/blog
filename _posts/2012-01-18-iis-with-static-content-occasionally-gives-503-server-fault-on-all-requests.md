@@ -11,7 +11,7 @@ This seem to occur at random intervals for no apparent reason.
 
 ### Searching for the cause
 
-The server is configured as described in [Tuning IIS 7 for static content](http://www.ckode.dk/server-configuration/tuning-iis-7-for-static-content/), which means it caches files pretty efficiently, so clearly it couldn’t be a performance issue.
+The server is configured as described in [Tuning IIS 7 for static content](https://steffenskov.github.io/blog/2010/10/27/tuning-iis-7-for-static-content.html), which means it caches files pretty efficiently, so clearly it couldn’t be a performance issue.
 
 After meddling with the number of TCP ports available, searching through the registry, checking every dialog in IIS management console, and looking through netsh, we finally found the cause:  
 By default IIS will scan all folders in your site for web.config files, this means you can apply certain configurations only for a set of subfolders.

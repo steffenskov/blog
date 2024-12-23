@@ -35,7 +35,7 @@ As both services are likely outside your influence, your options are very limite
 
 This is actually the main purpose of this post: How you as a library developer, can prevent others from getting into trouble when using your library.
 
-The answer is simple to explain, but can lead to a bit of overhead for the consumers of your library. It stems from the “D” in the SOLID principles: “[Dependency inversion principle](https://www.ckode.dk/programming/solid-principles-part-5-dependency-inversion-principle/ "Dependency inversion principle")“, which can be boiled down to: “Depend on abstractions, not on concretions”.
+The answer is simple to explain, but can lead to a bit of overhead for the consumers of your library. It stems from the “D” in the SOLID principles: “[Dependency inversion principle](https://steffenskov.github.io/blog/2013/11/24/solid-principles-part-5-dependency-inversion-principle.html "Dependency inversion principle")“, which can be boiled down to: “Depend on abstractions, not on concretions”.
 
 An example is in order here I think. Suppose you’re building “YeOldWeatherService” from before, and you need to perform HTTP requests to some weather API. You’ve build this very bare-bone service:
 

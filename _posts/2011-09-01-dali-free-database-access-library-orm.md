@@ -3,7 +3,7 @@ title: 'DaLi - Free Database access Library (ORM)'
 layout: post
 ---
 
-[Download](http://www.ckode.dk/wordpress/wp-content/uploads/2011/09/Dali_1.6.3.zip)
+[Download](https://steffenskov.github.io/blog/assets/downloads/Dali_1.6.3.zip)
 
 DaLi is an ORM ([Object-Relational Mapping](http://en.wikipedia.org/wiki/Object-Relational_Mapping)) based around dot.net Reflection.
 
@@ -101,4 +101,4 @@ Other than the above it also supports:
 - Logging of performance of queries, as well as any exceptions they’ve caused
 - Type inference on query parameters, to simplify using parameterized queries.
 
-And that’s pretty much the gist of it. If you want to try it out, you can download it here: [Download](http://www.ckode.dk/wordpress/wp-content/uploads/2011/09/Dali_1.6.3.zip)
+And that’s pretty much the gist of it. If you want to try it out, you can download it here: [Download](https://steffenskov.github.io/blog/assets/downloads/Dali_1.6.3.zip)

@@ -98,8 +98,8 @@ and an excellent article by Robert C. Martin here: <http://www.objectmentor.com/
 
 ### Links to the other parts of this series:
 
-1. [Single Responsibility Principle (SRP)](http://www.ckode.dk/programming/solid-principles-part-1-single-responsibility-principle/)
+1. [Single Responsibility Principle (SRP)](https://steffenskov.github.io/blog/2011/10/20/solid-principles-part-1-single-responsibility-principle.html)
 2. Open/Closed Principle (OCP)
-3. [Liskov’s Substitution Principle (LSP)](http://www.ckode.dk/programming/solid-principles-part-3-liskovs-substitution-principle/)
-4. [Interface Segregation Principle (ISP)](http://www.ckode.dk/programming/solid-principles-part-4-interface-segregation-principle/)
-5. [Dependency Inversion Principle (DIP)](http://www.ckode.dk/programming/solid-principles-part-5-dependency-inversion-principle/)
+3. [Liskov’s Substitution Principle (LSP)](https://steffenskov.github.io/blog/2012/02/25/solid-principles-part-3-liskovs-substitution-principle.html)
+4. [Interface Segregation Principle (ISP)](https://steffenskov.github.io/blog/2012/09/30/solid-principles-part-4-interface-segregation-principle.html)
+5. [Dependency Inversion Principle (DIP)](https://steffenskov.github.io/blog/2013/11/24/solid-principles-part-5-dependency-inversion-principle.html)

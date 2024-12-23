@@ -47,6 +47,6 @@ And that’s all, now my shortcuts are similar to the ones I normally used on Wi
 Setting this up was actually pretty simple for me, as I’m running on a single SSD.  
 The following command is enough to fully trim my drive:  
 `fstrim /`  
-So all I did was add this to the beginning of my bind-mount script, which you can read all about here: [My journey to Linux – Part 3](http://www.ckode.dk/linux/my-journey-to-linux-part-3/).  
+So all I did was add this to the beginning of my bind-mount script, which you can read all about here: [My journey to Linux – Part 3](https://steffenskov.github.io/blog/2015/11/13/my-journey-to-linux-part-3.html).  
 However I could had added it to a **S90Trim** script file and put it in **/etc/rc5.d** instead as well. So if you just have one or multiple SSDs and no network mounts, I’d recommend going with a script file in rc5.d.  
 If you need to trim more drives, just add another line with fstrim and the mounting point.

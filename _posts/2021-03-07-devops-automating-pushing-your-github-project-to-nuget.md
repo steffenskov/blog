@@ -36,7 +36,7 @@ Finally for the NuGet integration to work, you need an API key from NuGet. Thank
 Now that you have the API key, you need to add it to your GitHub project. To do this simply open your project on GitHub and click “Settings” in the top bar. Under settings click “Secrets” and finally click the “New repository secret” button in the top-right of the view. Enter a name (I use NUGET\_API\_KEY) and paste your API key into the Value field and click “Add secret”, you’re done.
 
 
-[![](https://www.ckode.dk/wordpress/wp-content/uploads/2021/03/GitHub-secrets.png)](https://www.ckode.dk/wordpress/wp-content/uploads/2021/03/GitHub-secrets.png)
+[![](https://steffenskov.github.io/blog/assets/img/GitHub-secrets.png)](https://steffenskov.github.io/blog/assets/img/GitHub-secrets.png)
 Now it’s finally time for the good stuff, here’s my complete YAML file for the automated flow. You’ll need to change 2 or 3 things in it:
 
 - PROJECT\_PATH should point to your csproj file

@@ -33,7 +33,7 @@ So to recap: If you get the dreaded “grub-efi-amd64-signed failed to install i
 
 ## Encryption
 
-I have 2 SSDs in my PC: One Samsung 850 PRO and one Samsung 850 EVO. Both of them support the OPAL standard for encryption, and both of them had run just fine in Windows eDrive mode (see my blog post about eDrive here: [How to enable Windows eDrive encryption for SSDs/](http://www.ckode.dk/desktop-machines/how-to-enable-windows-edrive-encryption-for-ssds/), if you’re interested)
+I have 2 SSDs in my PC: One Samsung 850 PRO and one Samsung 850 EVO. Both of them support the OPAL standard for encryption, and both of them had run just fine in Windows eDrive mode (see my blog post about eDrive here: [How to enable Windows eDrive encryption for SSDs/](https://steffenskov.github.io/blog/2015/03/01/how-to-enable-windows-edrive-encryption-for-ssds.html), if you’re interested)
 
 I started out by downloading MSED from www.r0m30.com/ where I download both the Linux tool and the PBA image. However there is a newer version elsewhere, so don’t go to r0m30’s just yet!
 
@@ -57,7 +57,7 @@ Here are the exact steps necessary to reset a drive:
 
 In the above {PSID} would be the 32 ciphers, and {DRIVE} would for instance be /dev/sda.
 
-Here’s a picture of the PSID on my Samsung 850 EVO: [![](http://www.ckode.dk/wordpress/wp-content/uploads/2015/10/Samsung-EVO-850-PSID_thumb.jpg)](http://www.ckode.dk/wordpress/wp-content/uploads/2015/10/Samsung-EVO-850-PSID.jpg)
+Here’s a picture of the PSID on my Samsung 850 EVO: [![](https://steffenskov.github.io/blog/assets/img/Samsung-EVO-850-PSID.jpg)](https://steffenskov.github.io/blog/assets/img/Samsung-EVO-850-PSID.jpg)
 
 This will erase the drive, even if it doesn’t seem to have done so. Reboot the PC and reinstall Linux at this point.
 

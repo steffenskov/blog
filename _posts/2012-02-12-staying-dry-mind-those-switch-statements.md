@@ -65,7 +65,7 @@ public class ReportSettings
 
 You may be thinking “that’s not duplicate code”, and you’d be somewhat right. The return statements aren’t duplicate, but the entire switch statement is.  
 Supposing I add a third `ReportType`, I’ll have to add code to both switch statements – thus maintaining the same switch block multiple places, or one could say `repeating myself`  
-And whilst I’m talking about modifying my switch block to add a new type, I’d like to point out this also violates the [Open/Closed Principle](http://www.ckode.dk/programming/solid-principles-part-2-openclosed-principle/) (henceforth referred to as OCP).
+And whilst I’m talking about modifying my switch block to add a new type, I’d like to point out this also violates the [Open/Closed Principle](https://steffenskov.github.io/blog/2011/10/25/solid-principles-part-2-openclosed-principle.html) (henceforth referred to as OCP).
 
 But back on track with DRY – a simple way to get the above code DRY again, would be to create a class to encapsulate the header and footer information, for each `ReportType`, and have a single method which returns an instance of this class:
 
@@ -118,7 +118,7 @@ public class ReportSettingsLocator
 ```
 
 You may be thinking “That’s an awful lot of classes, wouldn’t it be easier to just have `ReportSetting` class with Header/Footer, and set them inside the switch statement?”  
-And well yes that would indeed be possible, but that really violates [Single Responsibility Principle](http://www.ckode.dk/programming/solid-principles-part-1-single-responsibility-principle/) (henceforth known as SRP).  
+And well yes that would indeed be possible, but that really violates [Single Responsibility Principle](https://steffenskov.github.io/blog/2011/10/20/solid-principles-part-1-single-responsibility-principle.html) (henceforth known as SRP).  
 “How?” you may wonder ? Well it’s simple – the `GetReportSettings` method all of a sudden has to both figure out which setting to return, and figure out what this setting contains (by setting the proper header/footer inside the case block)
 
 That aside, you can see that I’ve changed the `ReportSettings` class to a `ReportSettingsLocator`. This is done because this is essentially a [Service locator pattern](http://en.wikipedia.org/wiki/Service_locator_pattern).

@@ -35,18 +35,18 @@ Without further ado, here’s a complete list of my requirements, what I use on 
 
 | Requirement | Windows solution | Linux solution | Expecting problems? | Blog post |
 |---|---|---|---|---|
-| HW accelerated full disk encryption | Windows eDrive | MSED | Yes | [Part 2](http://www.ckode.dk/linux/my-journey-to-linux-part-2/#Encryption) |
-| Automatic regular TRIM of SSD | Manually scheduled task | Not certain yet | Yes | [Part 4](http://www.ckode.dk/linux/my-journey-to-linux-part-4/#Trim) |
-| Desktop shortcuts similar to Windows | Built-in | No clue | Yes | [Part 4](http://www.ckode.dk/linux/my-journey-to-linux-part-4/#Shortcuts) |
-| VPN to Juniper box at work | Juniper Pulse Secure | Openconnect | Yes | [Part 3](http://www.ckode.dk/linux/my-journey-to-linux-part-3/#Juniper) |
+| HW accelerated full disk encryption | Windows eDrive | MSED | Yes | [Part 2](https://steffenskov.github.io/blog/2015/11/01/my-journey-to-linux-part-2.html#Encryption) |
+| Automatic regular TRIM of SSD | Manually scheduled task | Not certain yet | Yes | [Part 4](https://steffenskov.github.io/blog/2016/03/11/my-journey-to-linux-part-4.html#Trim) |
+| Desktop shortcuts similar to Windows | Built-in | No clue | Yes | [Part 4](https://steffenskov.github.io/blog/2016/03/11/my-journey-to-linux-part-4.html#Shortcuts) |
+| VPN to Juniper box at work | Juniper Pulse Secure | Openconnect | Yes | [Part 3](https://steffenskov.github.io/blog/2015/11/13/my-journey-to-linux-part-3.html#Juniper) |
 | VPN to Private Internet Access | Their Windows client | Network-manager | Yes | Coming soon |
 | Encrypted compression of files for cloud storage | 7Zip | p7zip | Yes | Coming soon |
 | Automated backup of my blog’s database | Homebrew dot.net application | Homebrew dot.net application using Mono | Yes | Coming soon |
-| Using NAS for documents, pictures and so forth | NET USE to mount, then mapping the drive | Editing fstab | No | [Part 3](http://www.ckode.dk/linux/my-journey-to-linux-part-3/#NAS) |
+| Using NAS for documents, pictures and so forth | NET USE to mount, then mapping the drive | Editing fstab | No | [Part 3](https://steffenskov.github.io/blog/2015/11/13/my-journey-to-linux-part-3.html#NAS) |
 | Browser | Firefox | Firefox | No | Coming soon |
 | E-mail | Thunderbird | Thunderbird | No | Coming soon |
 | Anti-virus | Bitdefender Internet Security 2016 | Not certain yet | Yes | Coming soon |
-| Wireless printer/scanner | Brother’s driver | Not certain yet | Yes | [Part 4](http://www.ckode.dk/linux/my-journey-to-linux-part-4/#Printer) |
+| Wireless printer/scanner | Brother’s driver | Not certain yet | Yes | [Part 4](https://steffenskov.github.io/blog/2016/03/11/my-journey-to-linux-part-4.html#Printer) |
 | Advanced text editor | Geany | Probably GEdit or Geany | No | Not covered |
 | C# development tool | Visual Studio 2015 Community Edition | MonoDevelop | No | Coming soon |
 | Cloud based backup storage | Google drive app | Not certain yet, maybe GRive | Yes | Coming soon |

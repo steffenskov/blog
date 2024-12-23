@@ -11,7 +11,7 @@ Now with that out of the way, let’s get down to business 🙂
 
 First step is to enable the proprietary driver, if you haven’t done so already – I went with the newest one available as seen below:
 
-[![](http://www.ckode.dk/wordpress/wp-content/uploads/2017/01/Drivers.png)](http://www.ckode.dk/wordpress/wp-content/uploads/2017/01/Drivers.png)
+[![](https://steffenskov.github.io/blog/assets/img/Drivers.png)](https://steffenskov.github.io/blog/assets/img/Drivers.png)
 
 The second step is to enable the coolbits extension, to do so run this from a terminal:  
 `sudo nvidia-xconfig --cool-bits=12`
@@ -21,7 +21,7 @@ After this you have to reboot the PC.
 After the reboot start the NVIDIA X Server Settings application, and go to “PowerMizer”, here you can enter offsets for both the core and memory for your graphics card.
 
 To apply a value, just press ENTER in the “Current” box, it’ll say something like “Graphics Clock offset set to XX.” at the bottom of the screen, like mine does here:  
-[![PowerMizer](http://www.ckode.dk/wordpress/wp-content/uploads/2015/11/PowerMizer.png)](http://www.ckode.dk/wordpress/wp-content/uploads/2015/11/PowerMizer.png)
+[![PowerMizer](https://steffenskov.github.io/blog/assets/img/PowerMizer.png)](https://steffenskov.github.io/blog/assets/img/PowerMizer.png)
 
 Finally you need a tool to see whether you went too far with your overclock. I used Unigine Heaven which is very simple to install:
 
@@ -51,10 +51,10 @@ Do note: Despite running benchmark for 30 minutes, your system could still becom
 As a conclusion, here are the stock and overclocked results I got in Unigine Heaven. Notice how much the Min. FPS has increased – this is crucial for smooth gaming 🙂
 
 **Stock**  
-[![Stock](http://www.ckode.dk/wordpress/wp-content/uploads/2015/11/Stock.png)](http://www.ckode.dk/wordpress/wp-content/uploads/2015/11/Stock.png)
+[![Stock](https://steffenskov.github.io/blog/assets/img/Stock.png)](https://steffenskov.github.io/blog/assets/img/Stock.png)
 
 **Overclocked**  
-[![Overclocked](http://www.ckode.dk/wordpress/wp-content/uploads/2015/11/Overclocked.png)](http://www.ckode.dk/wordpress/wp-content/uploads/2015/11/Overclocked.png)
+[![Overclocked](https://steffenskov.github.io/blog/assets/img/Overclocked.png)](https://steffenskov.github.io/blog/assets/img/Overclocked.png)
 
 Finally to automatically apply these settings at boot, we have to do a bit of manual work. The nvidia X server settings doesn’t support loading overclocks, so I went and created a simple bash script, and added it to startup applications.
 

@@ -421,10 +421,10 @@ On the other hand if the supertype DOES use private setters, it's quite easy to 
 Feel free to leave a comment if I missed anything 🙂</p>
 <h3>Links to the other parts of this series:</h3>
 <ol>
-<li><a href="http://www.ckode.dk/programming/solid-principles-part-1-single-responsibility-principle/">Single Responsibility Principle (SRP)</a></li>
-<li><a href="http://www.ckode.dk/programming/solid-principles-part-2-openclosed-principle/">Open/Closed Principle (OCP)</a></li>
+<li><a href="https://steffenskov.github.io/blog/2011/10/20/solid-principles-part-1-single-responsibility-principle.html">Single Responsibility Principle (SRP)</a></li>
+<li><a href="https://steffenskov.github.io/blog/2011/10/25/solid-principles-part-2-openclosed-principle.html">Open/Closed Principle (OCP)</a></li>
 <li>Liskov's Substitution Principle (LSP)</li>
-<li><a href="http://www.ckode.dk/programming/solid-principles-part-4-interface-segregation-principle/">Interface Segregation Principle (ISP)</a></li>
-<li><a href="http://www.ckode.dk/programming/solid-principles-part-5-dependency-inversion-principle/">Dependency Inversion Principle (DIP)</a></li>
+<li><a href="https://steffenskov.github.io/blog/2012/09/30/solid-principles-part-4-interface-segregation-principle.html">Interface Segregation Principle (ISP)</a></li>
+<li><a href="https://steffenskov.github.io/blog/2013/11/24/solid-principles-part-5-dependency-inversion-principle.html">Dependency Inversion Principle (DIP)</a></li>
 </ol>
 ```
