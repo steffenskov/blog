@@ -1,17 +1,6 @@
 ---
-id: 199
 title: 'SOLID principles &#8211; Part 4: Interface Segregation Principle'
-date: '2012-09-30T10:32:35+01:00'
-author: Steffen
-excerpt: "This is the fourth of a five part series, where I go over the 5 principles which make up the <a href=\"http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)\" target=\"_blank\">SOLID</a> principles by <a href=\"http://en.wikipedia.org/wiki/Robert_C._Martin\" target=\"_blank\">Robert C. Martin</a>.\r\n\r\nThe fourth one is I: <a href=\"http://en.wikipedia.org/wiki/Interface_segregation_principle\" target=\"_blank\">Interface Segregation Principle</a> (ISP)\r\n\r\nThis principle states that interfaces should only contain the absolutely required properties/methods needed.\r\nIf an interface contains properties/methods the client code does not need, it should be split into more smaller interfaces."
 layout: post
-guid: 'http://www.ckode.dk/?p=199'
-permalink: /programming/solid-principles-part-4-interface-segregation-principle/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - SOLID
 ---
 
 This is the fourth of a five part series, where I go over the 5 principles which make up the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles by [Robert C. Martin](http://en.wikipedia.org/wiki/Robert_C._Martin).

@@ -1,22 +1,11 @@
 ---
-id: 261
 title: 'C# based simple service locator'
-date: '2015-03-04T21:09:37+01:00'
-author: Steffen
-excerpt: "I've always loved the Service locator pattern - why ? Because it requires so little maintenance, and it's a very crucial point if you want somewhat automatic dependency injection.\r\n\r\nAs you can read in my blog post \"Staying DRY: Mind those switch statements\" a service locator can replace cumbersome multiple switch statements which require each one to be changed whenever a new case comes along."
 layout: post
-guid: 'http://www.ckode.dk/?p=261'
-permalink: /programming/c-based-simple-service-locator/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - Caching
 ---
 
 Before you read any further I strongly suggest downloading the source file and opening it in Visual Studio (or whichever environment you prefer).
 
-[Download ServiceLocator.zip](http://www.ckode.dk/wordpress/wp-content/uploads/2015/10/servicelocator.zip)
+[Download ServiceLocator.zip](https://www.nuget.org/packages/Ckode.ServiceLocator/)
 
 I’ve always loved the [Service locator pattern](http://en.wikipedia.org/wiki/Service_locator_pattern) – why ? Because it requires so little maintenance, and it’s a very crucial point if you want somewhat automatic dependency injection.
 

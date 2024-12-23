@@ -1,16 +1,6 @@
 ---
-id: 299
 title: 'My journey to Linux &#8211; Part 4'
-date: '2016-03-11T17:49:54+01:00'
-author: Steffen
-excerpt: "In part 4 I go over configuring my keyboard shortcuts to mimick those I commonly used on Windows.\r\n\r\nI also configure automatic trim of my SSD, so I don't have to worry about degraded performance over time."
 layout: post
-guid: 'http://www.ckode.dk/?p=299'
-permalink: /linux/my-journey-to-linux-part-4/
-categories:
-    - Linux
-tags:
-    - Linux
 ---
 
 After a long wait, here’s part 4 of my movement to Linux.
@@ -39,7 +29,8 @@ The shortcuts I wanted from Windows are:
 - SUPER + down/up, to maximize / normalize window size
 
 For configuring these shortcuts, I installed CompizConfig:  
-`sudo apt-get install compizconfig-settings-manager compiz-plugins<br></br>`
+`sudo apt-get install compizconfig-settings-manager compiz-plugins
+`
 
 In CompizConfig i enabled these plugins:
 

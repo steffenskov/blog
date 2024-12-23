@@ -1,17 +1,6 @@
 ---
-id: 166
 title: 'Deleting directory and subdirectories safely in C#'
-date: '2011-02-24T17:35:18+01:00'
-author: Steffen
-excerpt: "Most C# developers know of Directory.Delete(path, recursive). However every once in a while they'll discover that it's error prone.\r\n\r\nHere's how to delete directories with read-only files inside them."
 layout: post
-guid: 'http://www.ckode.dk/?p=166'
-permalink: /programming/deleting-directory-and-subdirectories-safely-in-c/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - Optimization
 ---
 
 Most C# developers know of Directory.Delete(path, recursive). However every once in a while they’ll discover that it’s error prone.

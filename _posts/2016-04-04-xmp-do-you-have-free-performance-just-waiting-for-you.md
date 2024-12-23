@@ -1,14 +1,6 @@
 ---
-id: 305
 title: 'XMP &#8211; Do you have free performance just waiting for you?'
-date: '2016-04-04T14:56:40+01:00'
-author: Steffen
-excerpt: "Pretty much everyone I know never enable XMP, so I figure a blog post about what, why and how was in order.\r\n\r\nHere I'll explain what XMP is, why you want to enable it, and how to do it. Most likely you'll get some free performance by following this post."
 layout: post
-guid: 'http://www.ckode.dk/?p=305'
-permalink: /desktop-machines/xmp-do-you-have-free-performance-just-waiting-for-you/
-categories:
-    - 'Desktop machines'
 ---
 
 Pretty much everyone I know never enable XMP, so I figure a blog post about what, why and how was in order.

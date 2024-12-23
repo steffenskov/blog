@@ -1,14 +1,6 @@
 ---
-id: 311
 title: 'Unable to download new apps on Windows phone? Here&#8217;s the fix'
-date: '2016-12-23T14:47:26+01:00'
-author: Steffen
-excerpt: 'I recently switched back to using a windows smartphone, namely the Lumia 950. However having been away from the Windows platform for about a year, something had happened: I could no longer download new apps.'
 layout: post
-guid: 'http://www.ckode.dk/?p=311'
-permalink: /smartphone/unable-to-download-new-apps-on-windows-phone-heres-the-fix/
-categories:
-    - Smartphone
 ---
 
 I recently switched back to using a windows smartphone, namely the Lumia 950. However having been away from the Windows platform for about a year, something had happened: I could no longer download new apps.

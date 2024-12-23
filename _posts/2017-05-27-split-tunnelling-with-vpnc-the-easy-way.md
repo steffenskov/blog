@@ -1,16 +1,6 @@
 ---
-id: 372
 title: 'Split tunnelling with vpnc the easy way'
-date: '2017-05-27T08:47:00+01:00'
-author: Steffen
-excerpt: "I recently switched to running a clean Ubuntu Server with i3 as my window manager - this meant no more network connect, and thus I couldn't simply use the checkbox \"Use this connection only for resources on its network\".\r\n\r\nSo running a barebone vpnc, I finally figured out a simple way to split the traffic, so only traffic intended for the remote network runs through the VPN."
 layout: post
-guid: 'http://www.ckode.dk/?p=372'
-permalink: /linux/split-tunnelling-with-vpnc-the-easy-way/
-categories:
-    - Linux
-tags:
-    - VPN
 ---
 
 I recently switched to running a clean Ubuntu Server with i3 as my window manager – this meant no more network connect, and thus I couldn’t simply use the checkbox “Use this connection only for resources on its network”.
@@ -25,19 +15,38 @@ This configuration consists of 3 files, all of which I put in “/home/steffen/S
 The two .sh files are executable shell scripts. (if that wasn’t obvious from the naming)
 
 vpn.conf is your standard vpnc configuration file, mine looks like this:  
-`# vpn.conf<br></br>IPSec gateway URL_FOR_GATEWAY<br></br>IPSec ID IPSEC_ID<br></br>IPSec secret SECRET<br></br>Xauth username MY_USERNAME<br></br>Xauth password MY_PASSWORD<br></br>`
+```
+# vpn.conf
+IPSec gateway URL_FOR_GATEWAY
+IPSec ID IPSEC_ID
+IPSec secret SECRET
+Xauth username MY_USERNAME
+Xauth password MY_PASSWORD
+```
 
 Note: URL\_FOR\_GATEWAY doesn’t have to be an URL – it can also just be an IP.
 
 Right beside it I made this simple vpn.sh script (which is executable)
 
-`# vpn.sh<br></br>#!/bin/sh<br></br>sudo vpnc vpn.conf --script "/home/steffen/Scripts/vpnc-custom.sh"<br></br>sudo route del -net default dev tun0<br></br>sudo route add -net 192.168.1.0 netmask 255.255.255.0 dev tun0<br></br>sudo route add default gw 10.0.0.1<br></br>`
+```
+# vpn.sh
+#!/bin/sh
+sudo vpnc vpn.conf --script "/home/steffen/Scripts/vpnc-custom.sh"
+sudo route del -net default dev tun0
+sudo route add -net 192.168.1.0 netmask 255.255.255.0 dev tun0
+sudo route add default gw 10.0.0.1
+```
 
 This establishes the VPN tunnel, then immediately removes the default route vpnc creates, which would route all traffic through the tunnel. It then adds a custom route for the subnet I need to reach through the tunnel instead. This way only traffic for 192.168.1.X is routed through the tunnel – all other traffic uses my normal default route (i.e. your normal LAN or Internet connection)  
 And finally I had to add the original default route back in – do note that this may wary from distribution to distribution. I didn’t need this step on Linux Mint for instance, but I do on Ubuntu Server.
 
 Finally there’s the vpnc-custom.sh script, which is a custom instruction for vpnc:  
-`# vpnc-custom.sh<br></br>#!/bin/sh<br></br>INTERNAL_IP4_DNS=<br></br>/usr/share/vpnc-scripts/vpnc-script<br></br>`
+```
+# vpnc-custom.sh
+#!/bin/sh
+INTERNAL_IP4_DNS=
+/usr/share/vpnc-scripts/vpnc-script
+```
 
 This simply sets the variable INTERNAL\_IP4\_DNS to nothing, which prevents vpnc from altering your resolv.conf. This is necessary as otherwise all DNS lookups would go through the tunnel, as vpnc automatically gets a new DNS server from the VPN connection.
 

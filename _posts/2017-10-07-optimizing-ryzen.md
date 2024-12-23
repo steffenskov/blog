@@ -1,17 +1,6 @@
 ---
-id: 376
 title: 'Optimizing Ryzen'
-date: '2017-10-07T06:45:15+01:00'
-author: Steffen
-excerpt: "There are a few tweaks involved in getting the most out of any of the AMD Ryzen CPUs.\r\nHere I'll cover these, so you can get the most value out of your system."
 layout: post
-guid: 'http://www.ckode.dk/?p=376'
-permalink: /desktop-machines/optimizing-ryzen/
-categories:
-    - 'Desktop machines'
-tags:
-    - Overclocking
-    - Ryzen
 ---
 
 There are a few tweaks involved in getting the most out of any of the AMD Ryzen CPUs.  
@@ -106,8 +95,8 @@ Once it crashes reboot, increment vcore slightly and retry the clock speed it cr
 From here it’s just rince and repeat.
 
 Two notes though:  
-1\. I wouldn’t recommend going over 1,3v VCore on the stock cooler.  
-2\. ALWAYS watch your temperatures, if they go past 85 degrees stop Prime instantly (this is done by right-clicking the tray icon and clicking stop)
+1. I wouldn’t recommend going over 1,3v VCore on the stock cooler.  
+2. ALWAYS watch your temperatures, if they go past 85 degrees stop Prime instantly (this is done by right-clicking the tray icon and clicking stop)
 
 Once you hit 3,9ghz I’d honestly recommend settling there. Most Ryzen CPUs have a really hard time reaching 4,0 or above, and it’ll usually take a high VCore to do so. the very slight speed increase isn’t worth the massive increase in heat and power consumption (and will require an expensive cooler to boot)
 

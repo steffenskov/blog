@@ -1,17 +1,6 @@
 ---
-id: 186
 title: 'Thread signaling simplified'
-date: '2011-10-03T20:38:47+01:00'
-author: Steffen
-excerpt: "When using multiple threads in an application, you often want to be able to signal threads, to ensure a high level of responsiveness.\r\n\r\nThere are multiple ways to do this, but here's what I feel is the best solution."
 layout: post
-guid: 'http://www.ckode.dk/?p=186'
-permalink: /programming/thread-signaling-simplified/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - Threading
 ---
 
 When using multiple threads in an application, you often want to be able to signal threads, to ensure a high level of responsiveness.

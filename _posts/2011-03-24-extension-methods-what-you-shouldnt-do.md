@@ -1,17 +1,6 @@
 ---
-id: 168
 title: 'Extension methods, what you shouldn&#8217;t do'
-date: '2011-03-24T19:56:38+01:00'
-author: Steffen
-excerpt: "I'll admit it, I love extension methods, especially the ones from the LinQ-to-objects framework.\r\n\r\nHowever I often see them abused, partly by making everything extension methods, and partly by breaking readability with methods which normally shouldn't work.\r\n\r\nAlso I'd like to share a few of my extension methods with you - intrigued ? Read on :-)"
 layout: post
-guid: 'http://www.ckode.dk/?p=168'
-permalink: /programming/extension-methods-what-you-shouldnt-do/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - LinQ
 ---
 
 I’ll admit it, I love extension methods, especially the ones from the [LinQ-to-objects](http://msdn.microsoft.com/en-us/library/bb397919.aspx) framework.

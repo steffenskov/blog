@@ -1,17 +1,6 @@
 ---
-id: 190
 title: 'SOLID principles &#8211; Part 2: Open/Closed Principle'
-date: '2011-10-25T16:52:40+01:00'
-author: Steffen
-excerpt: "This is the second of a five part series, where I go over the 5 principles which make up the <a href=\"http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)\" target=\"_blank\">SOLID</a> principles by <a href=\"http://en.wikipedia.org/wiki/Robert_C._Martin\" target=\"_blank\">Robert C. Martin</a>.\r\n\r\nThe second one is O: <a href=\"http://en.wikipedia.org/wiki/Open/closed_principle\" target=\"_blank\">Open/Closed Principle</a> (OCP)\r\n\r\nThis principle states that classes should be open to extension, but closed to modification."
 layout: post
-guid: 'http://www.ckode.dk/?p=190'
-permalink: /programming/solid-principles-part-2-openclosed-principle/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - SOLID
 ---
 
 This is the second of a five part series, where I go over the 5 principles which make up the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles by [Robert C. Martin](http://en.wikipedia.org/wiki/Robert_C._Martin).

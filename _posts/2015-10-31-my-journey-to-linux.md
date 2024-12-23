@@ -1,18 +1,6 @@
 ---
-id: 280
 title: 'My journey to Linux &#8211; Part 1'
-date: '2015-10-31T12:06:06+01:00'
-author: Steffen
-excerpt: "Having used Windows since version 3.0 back in the DOS days, I've recently decided it's time to move my workstation to Linux.\r\n\r\nThis will be the first post in a series, where I go over how the journey starts, what problems arise and (hopefully) how I solve them.\r\n\r\nFor this first post I'll go over why, and what considerations I've taken before I even begin installing Linux."
 layout: post
-guid: 'http://www.ckode.dk/?p=280'
-permalink: /linux/my-journey-to-linux/
-categories:
-    - Linux
-tags:
-    - Backup
-    - Encryption
-    - Linux
 ---
 
 Having used Windows since version 3.0 back in the DOS days, I’ve recently decided it’s time to move my workstation to Linux.

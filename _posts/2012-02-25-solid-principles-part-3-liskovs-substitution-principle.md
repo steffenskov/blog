@@ -1,17 +1,6 @@
 ---
-id: 197
 title: 'SOLID principles &#8211; Part 3: Liskov&#8217;s Substitution Principle'
-date: '2012-02-25T14:58:21+01:00'
-author: Steffen
-excerpt: "This is the third of a five part series, where I go over the 5 principles which make up the <a href=\"http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)\" target=\"_blank\">SOLID</a> principles by <a href=\"http://en.wikipedia.org/wiki/Robert_C._Martin\" target=\"_blank\">Robert C. Martin</a>.\r\n\r\nThe third one is L: <a href=\"http://en.wikipedia.org/wiki/Liskov_substitution_principle\" target=\"_blank\">Liskov's Substitution Principle</a> (LSP)\r\n\r\nThis principle states that if S is a subtype of T, then objects of type T may be replaced with objects of type S without altering the desirable properties of the program (includes correctness, task performed, etc.)"
 layout: post
-guid: 'http://www.ckode.dk/?p=197'
-permalink: /programming/solid-principles-part-3-liskovs-substitution-principle/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - SOLID
 ---
 
 This is the third of a five part series, where I go over the 5 principles which make up the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles by [Robert C. Martin](http://en.wikipedia.org/wiki/Robert_C._Martin).
@@ -247,8 +236,10 @@ public class LSPIllegalSubType : SuperType
 	}
 }
 
-<p>Notice how I put the two requirements (preconditions) of the illegal subtype on their own lines ? This is primarily to increase readability - you could go with a single line:<br></br>
-<code>Contract.Requires<argumentexception>(!string.IsNullOrEmpty(name) && name.Length >= 4);</argumentexception></code><br></br>
+<p>Notice how I put the two requirements (preconditions) of the illegal subtype on their own lines ? This is primarily to increase readability - you could go with a single line:
+
+<code>Contract.Requires<argumentexception>(!string.IsNullOrEmpty(name) && name.Length >= 4);</argumentexception></code>
+
 However this is less easy to read, AND it gives you more cluttered information from the static checker.</p>
 <p>So I highly suggest going with one line per requirement.</p>
 <h3><a name="postconditions">Postconditions cannot be weakened</a></h3>
@@ -284,13 +275,18 @@ public class LSPIllegalSubType : SuperType
 
 <p>Here I'm using <code>Contract.Ensures</code> for my postconditions. The supertype ensures the result is never null or empty.</p>
 <p>My valid subtype strengthens this postcondition to also ensure it's never just whitespace. This is perfectly valid to do, because the subtype can now only return a subset of what the supertype could return. This effectively means that any code relying on the result being not null or empty, will always be satisfied.</p>
-<p>The invalid subtype weakens the postcondition to only ensure the result isn't null. Therefore this subtype may actually return empty strings, which the supertype couldn't.<br></br>
+<p>The invalid subtype weakens the postcondition to only ensure the result isn't null. Therefore this subtype may actually return empty strings, which the supertype couldn't.
+
 If any code relies on the method NOT returning empty strings, this subtype would cause that code to break.</p>
 <h3><a name="invariants">Invariants must be preserved</a></h3>
-<p>An <a href="http://en.wikipedia.org/wiki/Invariant_(computer_science)" target="_blank">invariant</a> is a condition which must hold true BOTH before and AFTER running a method.<br></br>
-Usually invariants are concerned with the state of the object they're defined on.<br></br>
-This is actually one of the more difficult constraints to fulfill, because invariants are often not explicitly defined in code. Many developers go with the "you just have to know this invariant exists" approach. (Which is bad IMHO)<br></br>
-So to comply with this constraint, I suggest starting by adding the proper invariants to the supertype.<br></br>
+<p>An <a href="http://en.wikipedia.org/wiki/Invariant_(computer_science)" target="_blank">invariant</a> is a condition which must hold true BOTH before and AFTER running a method.
+
+Usually invariants are concerned with the state of the object they're defined on.
+
+This is actually one of the more difficult constraints to fulfill, because invariants are often not explicitly defined in code. Many developers go with the "you just have to know this invariant exists" approach. (Which is bad IMHO)
+
+So to comply with this constraint, I suggest starting by adding the proper invariants to the supertype.
+
 Since invariants are inherited using Code Contracts, this constraint becomes a lot simpler, once the supertype implements these properly.</p>
 
 public class SuperType
@@ -325,9 +321,12 @@ public class LSPIllegalSubType : SuperType
 	}
 }
 
-<p>This example is somewhat "stupid", because normally you'd not make your <code>ObjectInvariant</code> method virtual (or protected for that matter, it'd be private).<br></br>
-But for the example, it serves the purpose.<br></br>
-The constraint simply says invariants must be preserved, and this obviously happens in the legal subtype, since it calls <code>base.ObjectInvariant()</code>.<br></br>
+<p>This example is somewhat "stupid", because normally you'd not make your <code>ObjectInvariant</code> method virtual (or protected for that matter, it'd be private).
+
+But for the example, it serves the purpose.
+
+The constraint simply says invariants must be preserved, and this obviously happens in the legal subtype, since it calls <code>base.ObjectInvariant()</code>.
+
 Likewise the illegal subtype isn't legal, because it fails to call the base method, and its own invariant isn't equal to the supertype invariant.</p>
 <p>Like I said, a quite crude example. But with Code Contracts this constraint is really quite hard to screw up.</p>
 <p>If, on the other hand, you didn't use Code Contracts, you might've had an example like this:</p>
@@ -377,7 +376,8 @@ public class LSPIllegalSubType : SuperType
 	}
 }
 
-<p>Not only is the code a lot clumsier than Code Contracts, it's also a lot easier to forget to check an invariant.<br></br>
+<p>Not only is the code a lot clumsier than Code Contracts, it's also a lot easier to forget to check an invariant.
+
 Most likely the clumsiness of this, is why many developers don't implement invariants in their code.</p>
 <p>On a final sidenote, Invariants are most often found in <a href="http://en.wikipedia.org/wiki/Domain_driven_design" target="_blank">Domain Driven Design</a>, where the domain model must be valid at all times.</p>
 <h3><a name="history">History Constraint</a></h3>
@@ -413,9 +413,11 @@ public class LSPIllegalSubType : SuperType
 <p>The supertype doesn't allow mutation of <code>Name</code> (since it has a private setter), but does allow mutation of <code>Age</code> through a public setter.</p>
 <p>The legal subtype adheres to this, as it only adds an <code>IncrementAge</code> method, which only mutates <code>Age</code>.</p>
 <p>On the other hand the illegal subtype offers a <code>ChangeName</code> method, which mutates the otherwise immutable property Name using Reflection.</p>
-<p>Although this requirement is easy to understand, it can be troublesome to conform to, if your supertype is complex (Since figuring out all non-mutable properties can be quite cumbersome, unless they like here are marked with private setters)<br></br>
+<p>Although this requirement is easy to understand, it can be troublesome to conform to, if your supertype is complex (Since figuring out all non-mutable properties can be quite cumbersome, unless they like here are marked with private setters)
+
 On the other hand if the supertype DOES use private setters, it's quite easy to figure out which properties not to mutate, as you have to use Reflection or similar hacks to alter them. (Lesson to be learned: Don't use Reflection to modify private fields or properties)</p>
-<p>Phew longest blog post yet, and quite delayed as well.<br></br>
+<p>Phew longest blog post yet, and quite delayed as well.
+
 Feel free to leave a comment if I missed anything 🙂</p>
 <h3>Links to the other parts of this series:</h3>
 <ol>

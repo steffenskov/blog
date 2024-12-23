@@ -1,16 +1,6 @@
 ---
-id: 158
 title: 'Getting a &#8220;pure&#8221; date in MS SQL (without the time)'
-date: '2010-11-25T11:26:23+01:00'
-author: Steffen
-excerpt: "You probably know the situation: You want to get all records grouped by day, but you stored their creation date using getdate(), so now they all contain time as well as the date.\r\n\r\nThe solution until MS SQL 2008 was not pretty, however with MS SQL 2008 we finally have a \"pure\" date datatype."
 layout: post
-guid: 'http://www.ckode.dk/?p=158'
-permalink: /programming/getting-a-pure-date-in-ms-sql-without-the-time/
-categories:
-    - Programming
-tags:
-    - SQL
 ---
 
 You probably know the situation: You want to get all records grouped by day, but you stored their creation date using getdate(), so now they all contain time as well as the date.

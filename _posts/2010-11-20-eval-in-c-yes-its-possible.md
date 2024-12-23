@@ -1,16 +1,6 @@
 ---
-id: 148
 title: '&#8220;eval&#8221; in C#, yes it&#8217;s possible'
-date: '2010-11-20T08:09:44+01:00'
-author: Steffen
-excerpt: 'Ever wanted something similar to javascript''s eval statement in C# ? Here''s how to do it.'
 layout: post
-guid: 'http://www.ckode.dk/?p=148'
-permalink: /programming/eval-in-c-yes-its-possible/
-categories:
-    - Programming
-tags:
-    - 'C#'
 ---
 
 If you’ve used javascript, you probably know the nifty “[eval](http://www.w3schools.com/jsref/jsref_eval.asp)” statement.

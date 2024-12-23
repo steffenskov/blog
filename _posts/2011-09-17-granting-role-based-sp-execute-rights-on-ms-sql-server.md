@@ -1,16 +1,6 @@
 ---
-id: 178
 title: 'Granting role based SP execute rights on MS SQL server'
-date: '2011-09-17T15:18:06+01:00'
-author: Steffen
-excerpt: "Most databases will eventually make use of stored procedures.\r\nHowever out-of-the-box there's no \"execute SP\" role to assign your SQL user.\r\n\r\nHere's how to create the role and grant it the proper access."
 layout: post
-guid: 'http://www.ckode.dk/?p=178'
-permalink: /programming/granting-role-based-sp-execute-rights-on-ms-sql-server/
-categories:
-    - Programming
-tags:
-    - SQL
 ---
 
 Most databases will eventually make use of stored procedures.  

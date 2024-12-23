@@ -1,18 +1,6 @@
 ---
-id: 174
 title: 'DaLi &#8211; Free Database access Library (ORM)'
-date: '2011-09-01T21:28:41+01:00'
-author: Steffen
-excerpt: "DaLi is an ORM (<a href=\"http://en.wikipedia.org/wiki/Object-Relational_Mapping\" target=\"_blank\">Object-Relational Mapping</a>) based around dot.net Reflection.\r\n\r\nWhilst Reflection is inherently slow, I make use of quite a bit of caching to avoid any severe overhead. In fact DaLi performs at around 97 % of hand written ORM code."
 layout: post
-guid: 'http://www.ckode.dk/?p=174'
-permalink: /downloads/dali-free-database-access-library-orm/
-categories:
-    - Downloads
-tags:
-    - 'C#'
-    - Caching
-    - SQL
 ---
 
 [Download](http://www.ckode.dk/wordpress/wp-content/uploads/2011/09/Dali_1.6.3.zip)

@@ -1,16 +1,6 @@
 ---
-id: 155
 title: 'Trouble reading registry key from C#'
-date: '2010-11-23T19:29:09+01:00'
-author: Steffen
-excerpt: "Reading from registry in C# is very simple, so I was quite stumped when my code didn't work.\r\nThe reason however, was very simple once found: The Wow6432Node..."
 layout: post
-guid: 'http://www.ckode.dk/?p=155'
-permalink: /programming/trouble-reading-registry-key-from-c/
-categories:
-    - Programming
-tags:
-    - 'C#'
 ---
 
 Recently I needed to read a registry key in C#. This is obviously pretty simple using the Registry class in the “Microsoft.Win32” namespace:

@@ -1,14 +1,6 @@
 ---
-id: 310
 title: 'Adjusting interface size in Sims 4'
-date: '2016-12-18T10:21:45+01:00'
-author: Steffen
-excerpt: 'My wife recently started playing Sims 4 on our TV, however she found the interface to be slightly on the small size. Luckily changing this is extremely simple.'
 layout: post
-guid: 'http://www.ckode.dk/?p=310'
-permalink: /gaming/adjusting-interface-size-in-sims-4/
-categories:
-    - Gaming
 ---
 
 My wife recently started playing Sims 4 on our TV, however she found the interface to be slightly on the small size. Luckily changing this is extremely simple.

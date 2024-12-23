@@ -1,16 +1,6 @@
 ---
-id: 216
 title: 'Finding unused indexes on MS SQL server'
-date: '2013-07-03T15:14:32+01:00'
-author: Steffen
-excerpt: "Do you ever find yourself not getting rid of old indexes, when they're no longer needed ?\r\n\r\nI guess we all do sometimes, but luckily SQL server keeps track of the usage of indexes, which allows you to find those unused indexes easily."
 layout: post
-guid: 'http://www.ckode.dk/?p=216'
-permalink: /programming/finding-unused-indexes-on-ms-sql-server/
-categories:
-    - Programming
-tags:
-    - SQL
 ---
 
 Do you ever find yourself not getting rid of old indexes, when they’re no longer needed ?

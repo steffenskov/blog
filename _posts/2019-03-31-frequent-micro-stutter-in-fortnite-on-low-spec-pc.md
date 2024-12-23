@@ -1,13 +1,6 @@
 ---
-id: 399
 title: 'Frequent micro stutter in Fortnite on low-spec PC'
-date: '2019-03-31T14:08:39+01:00'
-author: Steffen
 layout: post
-guid: 'http://www.ckode.dk/?p=399'
-permalink: /gaming/frequent-micro-stutter-in-fortnite-on-low-spec-pc/
-categories:
-    - Gaming
 ---
 
 I’ve recently attempted to get a low-spec PC to run Fortnite for a friend of mine. His specs were an old Phenom II x4 3,1ghz, 8GB of DDR3 and an HD 7850 2GB.

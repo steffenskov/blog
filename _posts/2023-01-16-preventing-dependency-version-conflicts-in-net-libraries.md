@@ -1,17 +1,6 @@
 ---
-id: 420
 title: 'Preventing dependency version conflicts in .Net libraries'
-date: '2023-01-16T19:40:02+01:00'
-author: Steffen
 layout: post
-guid: 'https://www.ckode.dk/?p=420'
-permalink: /programming/preventing-dependency-version-conflicts-in-net-libraries/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - Design-patterns
-    - SOLID
 ---
 
 ## What is the issue?

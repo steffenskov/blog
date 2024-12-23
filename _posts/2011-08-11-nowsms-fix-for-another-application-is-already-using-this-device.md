@@ -1,14 +1,6 @@
 ---
-id: 171
 title: 'NowSMS &#8211; Fix for &#8220;Another application is already using this device&#8221;'
-date: '2011-08-11T10:10:30+01:00'
-author: Steffen
-excerpt: "NowSMS can sometimes pop the error \"Unable to access modem at COMx: — Error 5 — Access Denied — Another application is already using this device\"\r\nThis can happen even though nothing is using the modem...\r\n\r\nHere's how to fix the problem :-)"
 layout: post
-guid: 'http://www.ckode.dk/?p=171'
-permalink: /server-configuration/nowsms-fix-for-another-application-is-already-using-this-device/
-categories:
-    - 'Server configuration'
 ---
 
 We’ve been using [NowSMS Lite](http://www.nowsms.com/) for a while at work. It’s the SMS Gateway for our monitoring system (it monitors all servers, services, etc.)

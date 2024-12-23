@@ -1,16 +1,6 @@
 ---
-id: 131
 title: 'Serverside paging with Ms SQL 2005 / 2008'
-date: '2010-11-17T17:52:58+01:00'
-author: Steffen
-excerpt: "If you've done any amount of website development, you know the issues with paging your data.\r\n\r\nWith MS SQL 2005 and newer there's an easy way to do it in your SQL queries. And it even performs better to boot!\r\n\r\nHere I'll sum up how to write proper paging queries with superb performance."
 layout: post
-guid: 'http://www.ckode.dk/?p=131'
-permalink: /programming/serverside-paging-with-ms-sql-2005-2008/
-categories:
-    - Programming
-tags:
-    - SQL
 ---
 
 If you’ve done any amount of website development, you know the issues with paging your data. (Assuming you’re not using LinQ-To-SQL that is, since it has it built-in.)
@@ -63,7 +53,10 @@ SELECT * FROM Inbox
 Notice I don’t have the ORDER BY clause in my last SELECT statement any more ? This is because the CTE is automatically ordered by the ROW\_NUMBER() OVER statement.
 
 Executing the above, would give me something like:  
-`<br></br>1, "Meeting with bank", "blabla", "Bank guy", "2010-11-11"<br></br>2, "Dinner tonight ?", "blabla", "Wife", "2010-11-12"<br></br>`
+`
+1, "Meeting with bank", "blabla", "Bank guy", "2010-11-11"
+2, "Dinner tonight ?", "blabla", "Wife", "2010-11-12"
+`
 
 As you can see, a consecutive RowNumber is now included in my result set.
 

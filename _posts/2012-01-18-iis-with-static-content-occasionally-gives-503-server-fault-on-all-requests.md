@@ -1,16 +1,6 @@
 ---
-id: 194
 title: 'IIS with static content occasionally gives 503 Server Fault on all requests'
-date: '2012-01-18T16:20:02+01:00'
-author: Steffen
-excerpt: "Our content server occasionally responds 503 Server Fault on all requests for about a minute or so.\r\nThis seem to occur at random intervals for no apparent reason.\r\n\r\nAfter countless hours we finally found the solution..."
 layout: post
-guid: 'http://www.ckode.dk/?p=194'
-permalink: /server-configuration/iis-with-static-content-occasionally-gives-503-server-fault-on-all-requests/
-categories:
-    - 'Server configuration'
-tags:
-    - IIS
 ---
 
 ### The problem
@@ -34,7 +24,7 @@ After disabling it we have had no more 503 responses.
 
 ### How to implement the solution
 
-To change the web.config scan behaviour, you need to edit the **“applicationhost.config”** file, which is found in **“%windir%\\system32\\inetsrv\\config”**.  
+To change the web.config scan behaviour, you need to edit the `applicationhost.config”** file, which is found in `%windir%\\system32\\inetsrv\\config”**.  
 You’ll need to run in elevated mode to access this folder if UAC is enabled. (which it really should be on any server IMHO)
 
 1. In the file search for **&lt;sites&gt;** (the file is an XML).

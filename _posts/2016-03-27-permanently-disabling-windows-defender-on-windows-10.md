@@ -1,16 +1,6 @@
 ---
-id: 302
 title: 'Permanently disabling Windows Defender on Windows 10'
-date: '2016-03-27T20:55:30+01:00'
-author: Steffen
-excerpt: "Until recently Windows Defender would automatically disable, if you ran a purchased Antivirus (or one of the many free ones)\r\n\r\nHowever this is not the case anymore, or at least it hasn't been for me. \r\n\r\nHere's how to permanently disable Windows Defender, so you can rely on your purchased Antivirus alone."
 layout: post
-guid: 'http://www.ckode.dk/?p=302'
-permalink: /desktop-machines/permanently-disabling-windows-defender-on-windows-10/
-categories:
-    - 'Desktop machines'
-tags:
-    - 'Windows 10'
 ---
 
 Until recently Windows Defender would automatically disable, if you ran a purchased Antivirus (or one of the many free ones)

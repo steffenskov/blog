@@ -1,16 +1,6 @@
 ---
-id: 153
 title: 'Getting rid of invisible space used on harddrive'
-date: '2010-11-21T17:43:55+01:00'
-author: Steffen
-excerpt: "One of my harddrives recently started filling up real fast, yet I've put no files onto it for a long time...\r\n\r\nWindows Backup and the Shadow Copy Provider turned out to be the explanation."
 layout: post
-guid: 'http://www.ckode.dk/?p=153'
-permalink: /desktop-machines/getting-rid-of-invisible-space-used-on-harddrive/
-categories:
-    - 'Desktop machines'
-tags:
-    - 'Windows Backup'
 ---
 
 One of my harddrives recently started filling up real fast, so I looked into what was taking up all that space.

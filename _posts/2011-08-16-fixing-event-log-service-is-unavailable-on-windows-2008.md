@@ -1,16 +1,6 @@
 ---
-id: 173
 title: 'Fixing &#8220;Event log service is unavailable&#8221; on Windows 2008'
-date: '2011-08-16T16:38:07+01:00'
-author: Steffen
-excerpt: "One of our servers started showing this error: \"Event log service is unavailable. Verify that the service is running.\"\r\n\r\nFixing it proved quite simple, after a lot of searching on google..."
 layout: post
-guid: 'http://www.ckode.dk/?p=173'
-permalink: /server-configuration/fixing-event-log-service-is-unavailable-on-windows-2008/
-categories:
-    - 'Server configuration'
-tags:
-    - 'Windows 2008'
 ---
 
 Out of nowhere one of our servers wouldn’t show its event log anymore.

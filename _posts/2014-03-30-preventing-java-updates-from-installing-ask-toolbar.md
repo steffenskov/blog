@@ -1,18 +1,6 @@
 ---
-id: 241
 title: 'Preventing Java updates from installing Ask toolbar'
-date: '2014-03-30T12:36:56+01:00'
-author: Steffen
-excerpt: "If you're like me, you absolutely hate Java updates, because they try to stuff some sort of crapware down your throat. Most commonly it's the Ask toolbar, but McAfee antivirus has been around as well.\r\n\r\nLuckily there's a simple way to prevent this problem, you simply need to add 2 registry keys to the Windows registry, and Java won't even ask you for the toolbars."
 layout: post
-guid: 'http://www.ckode.dk/?p=241'
-permalink: /desktop-machines/preventing-java-updates-from-installing-ask-toolbar/
-categories:
-    - 'Desktop machines'
-tags:
-    - Ask
-    - Java
-    - Registry
 ---
 
 If you’re like me, you absolutely hate Java updates, because they try to stuff some sort of crapware down your throat. Most commonly it’s the Ask toolbar, but McAfee antivirus has been around as well.
@@ -23,7 +11,8 @@ Do note that this will only work as long as Java want it to, since their updater
 
 The keys you need to add are these:
 
-`"HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\SPONSORS" = "DISABLE"<br></br>"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\SPONSORS" = "DISABLE"`
+`"HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\SPONSORS" = "DISABLE"
+"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\SPONSORS" = "DISABLE"`
 
 Or if you’re a bit uncertain about using the registry editor, simply download this file: [Disable Java crapware.zip](http://www.ckode.dk/wordpress/wp-content/uploads/2014/03/Disable-Java-crapware.zip), unzip it, then run it and answer yes when it asks if you want to import the information.
 

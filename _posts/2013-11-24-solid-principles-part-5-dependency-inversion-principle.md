@@ -1,17 +1,6 @@
 ---
-id: 224
 title: 'SOLID principles &#8211; Part 5: Dependency Inversion Principle'
-date: '2013-11-24T11:16:19+01:00'
-author: Steffen
-excerpt: "This is the fifth of a five part series, where I go over the 5 principles which make up the <a href=\"http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)\" target=\"_blank\">SOLID</a> principles by <a href=\"http://en.wikipedia.org/wiki/Robert_C._Martin\" target=\"_blank\">Robert C. Martin</a>.\r\n\r\nThe fifth one is D: <a href=\"http://en.wikipedia.org/wiki/Dependency_inversion_principle\" target=\"_blank\">Dependency Inversion Principle</a> (DIP)\r\n\r\nThis principle states two things:\r\n<ul>\r\n\t<li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>\r\n\t<li>Abstractions should not depend upon details. Details should depend upon abstractions.</li>\r\n</ul>"
 layout: post
-guid: 'http://www.ckode.dk/?p=224'
-permalink: /programming/solid-principles-part-5-dependency-inversion-principle/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - SOLID
 ---
 
 This is the fifth of a five part series, where I go over the 5 principles which make up the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles by [Robert C. Martin](http://en.wikipedia.org/wiki/Robert_C._Martin).

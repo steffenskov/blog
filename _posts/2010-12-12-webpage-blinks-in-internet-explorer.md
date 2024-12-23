@@ -1,17 +1,6 @@
 ---
-id: 159
 title: 'Webpage blinks in Internet Explorer'
-date: '2010-12-12T06:47:36+01:00'
-author: Steffen
-excerpt: "I've encountered this peculiar bug a couple of times in Internet Explorer.\r\nSometimes parts of the webpage either blinks constantly, or disappears when e.g. hovering links only to reappear upon scrolling or hovering another link."
 layout: post
-guid: 'http://www.ckode.dk/?p=159'
-permalink: /programming/webpage-blinks-in-internet-explorer/
-categories:
-    - Programming
-tags:
-    - HTML
-    - 'Internet Explorer'
 ---
 
 I’ve encountered this peculiar bug a couple of times in Internet Explorer.  

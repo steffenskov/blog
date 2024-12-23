@@ -1,17 +1,6 @@
 ---
-id: 288
 title: 'Overclocking nvidia graphics card on Linux'
-date: '2017-01-21T13:59:28+01:00'
-author: Steffen
-excerpt: "Taking a brief detour from \"My journey to Linux\", I wanted to overclock my Geforce GTX 760, as I had done the same on Windows.\r\n\r\nDoing so proved to be very easy, and yield a rather good increase in performance."
 layout: post
-guid: 'http://www.ckode.dk/?p=288'
-permalink: /linux/overclocking-nvidia-graphics-card-on-linux/
-categories:
-    - Linux
-tags:
-    - Linux
-    - Overclocking
 ---
 
 Taking a brief detour from “My journey to Linux”, I wanted to overclock my Geforce GTX 760, as I had done the same on Windows.
@@ -40,7 +29,9 @@ Finally you need a tool to see whether you went too far with your overclock. I u
 2. Once downloaded, do a `chmod +x Unigine_Heaven-4.0.run` to be able to run it.
 3. Now run the installer with `./Unigine_Heaven-4.0.run` – this will extract the tool to a subfolder from where you run it
 4. And finally run the tool with  
-    `cd Unigine_Heaven-4.0<br></br>./heaven<br></br>`
+    `cd Unigine_Heaven-4.0
+./heaven
+`
 
 With heaven running, I moved NVIDIA X Server Settings to my secondary monitor, and simply started tweaking the settings – constantly looking at heaven for artifacts.
 
@@ -69,7 +60,9 @@ Finally to automatically apply these settings at boot, we have to do a bit of ma
 
 The scripts is as simple as:
 
-`#!/bin/bash<br></br>nvidia-settings -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=1400'<br></br>nvidia-settings -a '[gpu:0]/GPUGraphicsClockOffset[3]=50'`
+`#!/bin/bash
+nvidia-settings -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=1400'
+nvidia-settings -a '[gpu:0]/GPUGraphicsClockOffset[3]=50'`
 
 A brief explanation is in order:  
 **\[gpu:0\]** means to apply the setting to my primary graphics card, if I had two I would use both \[gpu:0\] and \[gpu:1\].  

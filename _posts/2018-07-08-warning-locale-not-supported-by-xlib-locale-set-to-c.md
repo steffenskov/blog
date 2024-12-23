@@ -1,14 +1,6 @@
 ---
-id: 392
 title: 'Warning: locale not supported by Xlib, locale set to C'
-date: '2018-07-08T15:58:31+01:00'
-author: Steffen
-excerpt: "If you're reading this, you've probably received the warning when running for instance <code>xterm</code> or <code>dmenu_run</code>.\r\n\r\nHere's how to easily fix the problem."
 layout: post
-guid: 'http://www.ckode.dk/?p=392'
-permalink: /linux/warning-locale-not-supported-by-xlib-locale-set-to-c/
-categories:
-    - Linux
 ---
 
 If you’re reading this, you’ve probably received the warning when running for instance `xterm` or `dmenu_run`.

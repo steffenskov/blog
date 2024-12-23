@@ -1,14 +1,6 @@
 ---
-id: 267
 title: 'Restoring performance of Samsung 840 EVO SSD'
-date: '2015-04-18T12:03:57+01:00'
-author: Steffen
-excerpt: "If you're reading this, you've most likely already heard about the problems with old data getting slow on Samsung's popular 840 EVO SSD drive.\r\n\r\nHere I go over a simple workaround to keep performance up, until Samsung can fix the problem permanently."
 layout: post
-guid: 'http://www.ckode.dk/?p=267'
-permalink: /desktop-machines/restoring-performance-of-samsung-840-evo-ssd/
-categories:
-    - 'Desktop machines'
 ---
 
 If you’re reading this, you’ve most likely already heard about the problems with old data getting slow on Samsung’s popular 840 EVO SSD drive.

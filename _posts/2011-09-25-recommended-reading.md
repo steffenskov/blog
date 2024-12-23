@@ -1,17 +1,6 @@
 ---
-id: 183
 title: 'Recommended reading'
-date: '2011-09-25T11:24:09+01:00'
-author: Steffen
-excerpt: "I often come across some good articles, so I decided to start sharing them.\r\nThis time I've got a great article about ASP.Net Webforms Viewstate, and a thorough article about dot.net 4.0 Code Contracts."
 layout: post
-guid: 'http://www.ckode.dk/?p=183'
-permalink: /programming/recommended-reading/
-categories:
-    - Programming
-tags:
-    - ASP.Net
-    - 'C#'
 ---
 
 I often come across some good articles, so I decided to start sharing them.

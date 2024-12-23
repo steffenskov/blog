@@ -1,17 +1,6 @@
 ---
-id: 189
 title: 'SOLID principles &#8211; Part 1: Single Responsibility Principle'
-date: '2011-10-20T17:50:03+01:00'
-author: Steffen
-excerpt: "This is the first of a five part series, where I go over the 5 principles which make up the <a href=\"http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)\" target=\"_blank\">SOLID</a> principles by <a href=\"http://en.wikipedia.org/wiki/Robert_C._Martin\" target=\"_blank\">Robert C. Martin</a>.\r\n\r\nThe first one is S: <a href=\"http://en.wikipedia.org/wiki/Single_responsibility_principle\" target=\"_blank\">Single Responsibility Principle</a> (SRP)\r\n\r\nThis principle states that a class should only one have responsibility, which is usually interpreted as having a single \"reason to change\"."
 layout: post
-guid: 'http://www.ckode.dk/?p=189'
-permalink: /programming/solid-principles-part-1-single-responsibility-principle/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - SOLID
 ---
 
 This is the first of a five part series, where I go over the 5 principles which make up the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles by [Robert C. Martin](http://en.wikipedia.org/wiki/Robert_C._Martin).

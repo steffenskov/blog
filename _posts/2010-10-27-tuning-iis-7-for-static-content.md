@@ -1,16 +1,6 @@
 ---
-id: 88
 title: 'Tuning IIS 7 for static content'
-date: '2010-10-27T17:57:01+01:00'
-author: Steffen
-excerpt: "Having an IIS serve static content is an excellent idea, however out-of-the-box it performs horribly for the job.\r\nRead here how to archive a factor 20 improvement of the performance, by doing nothing but configuration."
 layout: post
-guid: 'http://www.ckode.dk/?p=88'
-permalink: /server-configuration/tuning-iis-7-for-static-content/
-categories:
-    - 'Server configuration'
-tags:
-    - IIS
 ---
 
 Note: The below works for both IIS 7 and IIS 7.5. If you don’t want the story behind this, you can jump straight to the [tuning instructions here](#instructions).
@@ -30,7 +20,7 @@ A perfmon later we asserted this as well.
 
 ### Finding the bottleneck
 
-When checking perfmon for I/O bottlenecks, the preferred counter is found under “**PhysicalDisk**” and called “**% Idle Time**“, which, as a rule of thumb, should stay above 20%. Ours was flatlining at 0…  
+When checking perfmon for I/O bottlenecks, the preferred counter is found under `PhysicalDisk` and called `% Idle Time`, which, as a rule of thumb, should stay above 20%. Ours was flatlining at 0…  
 Clearly the disk was very busy all the time, and requests were queuing up.
 
 ### Removing the bottleneck
@@ -90,11 +80,11 @@ This evening will tell, whether we get a factor 40 improvement during prime time
 
 Now the last piece missing in the puzzle: Where do you change these settings ? Well here goes:
 
-**frequentHitThreshold** and **frequentHitTimePeriod** both reside in a file called “**applicationHost.config**“, which is found in “**%windir%\\system32\\inetsrv\\config**”
+**frequentHitThreshold** and **frequentHitTimePeriod** both reside in a file called `applicationHost.config`, which is found in `%windir%\system32\inetsrv\config`
 
 This file resembles web.config and machine.config quite a bit, so you should be familiar with the syntax.
 
-The element these attributes are set on, is called “**serverRuntime**” and should exist already, albeit being empty.  
+The element these attributes are set on, is called `serverRuntime` and should exist already, albeit being empty.  
 e.g. it looks like this:  
 `<serverRuntime />`
 
@@ -106,14 +96,14 @@ Note that setting **frequentHitTimePeriod** is in fact superfluous when **freque
 
 These changes take effect as soon as you save the file, and the result can be observed in perfmon immediately.
 
-The last setting, **ObjectCacheTTL** resides in the registry database, and doesn’t exist per default either. It’s location is “**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\services\\InetInfo\\Parameters**”
+The last setting, **ObjectCacheTTL** resides in the registry database, and doesn’t exist per default either. It’s location is `HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\services\\InetInfo\\Parameters`
 
-Create a new DWORD (32-bit) value called “**ObjectCacheTTL**” and set its decimal value to the number of seconds, which should pass between the IIS flushing its cache for unused files. (It only removes files which weren’t requested after initially being added to the cache)
+Create a new DWORD (32-bit) value called `ObjectCacheTTL` and set its decimal value to the number of seconds, which should pass between the IIS flushing its cache for unused files. (It only removes files which weren’t requested after initially being added to the cache)
 
 There is however a minor quirk to this, as there is in fact **\*another\*** registry key, which does pretty much the same – only it doesn’t… Confused ? That’s understandable.
 
 The thing is, IIS caches files either in user-mode or kernel-mode, and depending on which mode it caches in, it \*may\* use a different registry key for the flush interval.  
-So to be certain it actually does what you want, create another DWORD (32-bit) value called “**OutputCacheTTL**” and give it the same value as **ObjectCacheTTL**.
+So to be certain it actually does what you want, create another DWORD (32-bit) value called `OutputCacheTTL` and give it the same value as **ObjectCacheTTL**.
 
 The reason I say \*may\* use, is because I haven’t been able to find any official documentation stating exactly when each of the keys are used. So setting both is merely a “better safe than sorry” approach.
 
@@ -152,6 +142,6 @@ In our web.config of the site serving this static content, we had this section:
 `<caching enableKernelCache="true">`
 
 After removing it, the odd complete flushes disappeared. The IIS still makes large flushes at times, however now it keeps around 50.000 files in the cache, when doing so.  
-At the same time our performance counter for **“File cache hit %”** went up from 5% to 33% – A huge increase.
+At the same time our performance counter for `File cache hit %”** went up from 5% to 33% – A huge increase.
 
 If you’re interested, the question at Serverfault can be reached here: <http://serverfault.com/questions/448942/why-is-iis-7-5-flushing-file-cache-very-often>

@@ -1,17 +1,6 @@
 ---
-id: 160
 title: 'Avoiding caching with jQuery.load'
-date: '2010-12-18T16:32:36+01:00'
-author: Steffen
-excerpt: 'jQuery.load is an excellent way to load parts of your website asynchronously, however by default the browser just might cache the result from it, and your page will never be refreshed.'
 layout: post
-guid: 'http://www.ckode.dk/?p=160'
-permalink: /programming/avoiding-caching-with-jquery-load/
-categories:
-    - Programming
-tags:
-    - 'Internet Explorer'
-    - jQuery
 ---
 
 [jQuery.load](http://api.jquery.com/load/) is an excellent way to load parts of your website asynchronously, however by default the browser just might cache the result from it, and your page will never be refreshed.

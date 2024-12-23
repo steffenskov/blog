@@ -1,13 +1,6 @@
 ---
-id: 426
-title: 'SOLID applied &#8211; to REST API endpoints'
-date: '2024-06-11T18:58:40+01:00'
-author: Steffen
+title: 'SOLID applied - to REST API endpoints'
 layout: post
-guid: 'https://www.ckode.dk/?p=426'
-permalink: /programming/solid-applied-to-rest-api-endpoints/
-categories:
-    - Programming
 ---
 
 I see an approach to REST APIs rather often, that isn’t exactly ideal, so here I want to show how to use SOLID to analyze the intended solution and hopefully reach the conclusion, that something else might be better.

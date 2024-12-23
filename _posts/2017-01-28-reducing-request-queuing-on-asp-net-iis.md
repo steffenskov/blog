@@ -1,17 +1,6 @@
 ---
-id: 316
 title: 'Reducing request queuing on ASP.Net / IIS'
-date: '2017-01-28T13:35:22+01:00'
-author: Steffen
-excerpt: "If you're hosting an ASP.Net website on Microsoft IIS, you've likely seen requests being queued from time to time.\r\n\r\nLuckily one of the more common causes is easily remedied, here's how to do it."
 layout: post
-guid: 'http://www.ckode.dk/?p=316'
-permalink: /server-configuration/reducing-request-queuing-on-asp-net-iis/
-categories:
-    - 'Server configuration'
-tags:
-    - ASP.Net
-    - IIS
 ---
 
 If you’re hosting an ASP.Net website on Microsoft IIS, you’ve likely seen requests being queued from time to time.
@@ -24,7 +13,10 @@ The reason this happens even when you have plenty of CPU power available, is the
 
 Luckily there’s a configuration for this parameter. I’ll start off by showing the config I ended up using:
 
-`<system.web><br></br><httpRuntime minFreeThreads="8" minLocalRequestFreeThreads="8" /><br></br><processModel autoConfig="false" minWorkerThreads="75" maxWorkerThreads="150" maxIoThreads="150" /><br></br></system.web>`
+`<system.web>
+<httpRuntime minFreeThreads="8" minLocalRequestFreeThreads="8" />
+<processModel autoConfig="false" minWorkerThreads="75" maxWorkerThreads="150" maxIoThreads="150" />
+</system.web>`
 
 This config goes into the machine.config file, which can be found at
 
@@ -44,7 +36,11 @@ Here’s what the config does:
 
 Apart from this, there’s also another section of machine.config that you may want to address as well:
 
-`<system.net><br></br><connectionManagement><br></br><add address="*" maxconnection="48" /><br></br></connectionManagement><br></br></system.net>`
+`<system.net>
+<connectionManagement>
+<add address="*" maxconnection="48" />
+</connectionManagement>
+</system.net>`
 
 Normally there won’t be a &lt;system.net&gt; section already, but search just to be sure before adding it.
 

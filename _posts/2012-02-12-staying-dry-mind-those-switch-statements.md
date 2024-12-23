@@ -1,17 +1,6 @@
 ---
-id: 195
 title: 'Staying DRY: Mind those switch statements'
-date: '2012-02-12T20:23:46+01:00'
-author: Steffen
-excerpt: "As a developer you probably know the DRY abbreviation already: Dont Repeat Yourself.\r\nThis is one of the better known principles, and it's fairly easy to comprehend too: Don't implement the same logic twice.\r\n\r\nHowever one place where most people slip with DRY, is the switch statement."
 layout: post
-guid: 'http://www.ckode.dk/?p=195'
-permalink: /programming/staying-dry-mind-those-switch-statements/
-categories:
-    - Programming
-tags:
-    - 'C#'
-    - DRY
 ---
 
 As a developer you probably know the DRY abbreviation already: Dont Repeat Yourself.  
@@ -75,7 +64,7 @@ public class ReportSettings
 ```
 
 You may be thinking “that’s not duplicate code”, and you’d be somewhat right. The return statements aren’t duplicate, but the entire switch statement is.  
-Supposing I add a third `ReportType`, I’ll have to add code to both switch statements – thus maintaining the same switch block multiple places, or one could say “**repeating myself**”  
+Supposing I add a third `ReportType`, I’ll have to add code to both switch statements – thus maintaining the same switch block multiple places, or one could say `repeating myself`  
 And whilst I’m talking about modifying my switch block to add a new type, I’d like to point out this also violates the [Open/Closed Principle](http://www.ckode.dk/programming/solid-principles-part-2-openclosed-principle/) (henceforth referred to as OCP).
 
 But back on track with DRY – a simple way to get the above code DRY again, would be to create a class to encapsulate the header and footer information, for each `ReportType`, and have a single method which returns an instance of this class:

@@ -1,17 +1,6 @@
 ---
-id: 169
 title: 'Lost intellisense for custom controls in Visual Studio'
-date: '2011-05-21T06:23:27+01:00'
-author: Steffen
-excerpt: "Visual Studio can lose intellisense support in HTML view for ASP.Net sites.\r\n\r\nHere's how to recover it."
 layout: post
-guid: 'http://www.ckode.dk/?p=169'
-permalink: /programming/lost-intellisense-for-custom-controls-in-visual-studio/
-categories:
-    - Programming
-tags:
-    - ASP.Net
-    - 'Visual Studio'
 ---
 
 I had a quite peculiar experience, after reinstalling Windows on my work PC.

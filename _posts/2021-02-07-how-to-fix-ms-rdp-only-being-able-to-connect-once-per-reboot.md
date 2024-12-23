@@ -1,13 +1,6 @@
 ---
-id: 406
 title: 'How to fix MS RDP only being able to connect once per reboot'
-date: '2021-02-07T15:26:10+01:00'
-author: Steffen
 layout: post
-guid: 'https://www.ckode.dk/?p=406'
-permalink: /desktop-machines/how-to-fix-ms-rdp-only-being-able-to-connect-once-per-reboot/
-categories:
-    - 'Desktop machines'
 ---
 
 A somewhat recent Windows Update unfortunately introduced this bizarre bug. The bug affects the machine you’re trying to connect TO, not from. As such this is quite a huge issue if you work from home.

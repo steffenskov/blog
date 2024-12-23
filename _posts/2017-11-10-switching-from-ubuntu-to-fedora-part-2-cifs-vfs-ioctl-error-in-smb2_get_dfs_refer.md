@@ -1,14 +1,6 @@
 ---
-id: 380
 title: 'Switching from Ubuntu to Fedora &#8211; part 2: CIFS VFS: ioctl error in smb2_get_dfs_refer'
-date: '2017-11-10T14:37:42+01:00'
-author: Steffen
-excerpt: "After switching to kernel 4.13 I suddenly got a bunch of these errors when attempting to mount my NAS using CIFS (samba):\r\nCIFS VFS: ioctl error in smb2_get_dfs_refer\r\n\r\nHere's how to easily solve the problem."
 layout: post
-guid: 'http://www.ckode.dk/?p=380'
-permalink: /linux/switching-from-ubuntu-to-fedora-part-2-cifs-vfs-ioctl-error-in-smb2_get_dfs_refer/
-categories:
-    - Linux
 ---
 
 Quite the header right?
@@ -17,7 +9,7 @@ Still it serves a purpose: I found A LOT of people having this issue when gettin
 
 On to the topic: After upgrading my Ubuntu 17.04 to 17.10, and thus getting onto kernel 4.13, I suddenly got a bunch of these errors during boot:
 
-CIFS VFS: ioctl error in smb2\_get\_dfs\_refer
+`CIFS VFS: ioctl error in smb2\_get\_dfs\_refer`
 
 They were caused by attempting to mount my Synology NAS using CIFS.
 
@@ -35,7 +27,9 @@ Therefore I resolved to use the very simple (some might even call it subpar) fix
 And doing so is luckily very simple: Just add “vers=1.0” to your options in /etc/fstab and you’re done 🙂
 
 Here’s an excerpt from my fstab as an example:  
-`<br></br>//192.168.0.2	/mnt/NAS	cifs	noauto,uid=NAME,gid=NAME,username=NAME,password=PASS,iocharset=utf8,vers=1.0	0	0<br></br>`
+`
+//192.168.0.2	/mnt/NAS	cifs	noauto,uid=NAME,gid=NAME,username=NAME,password=PASS,iocharset=utf8,vers=1.0	0	0
+`
 
 As you can see I just appended “vers=1.0” at the end of the options.
 

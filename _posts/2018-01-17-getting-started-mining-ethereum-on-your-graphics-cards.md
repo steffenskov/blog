@@ -1,12 +1,6 @@
 ---
-id: 385
 title: 'Getting started mining Ethereum on your graphics card(s)'
-date: '2018-01-17T20:00:52+01:00'
-author: Steffen
-excerpt: 'In this post I go over setting up your PC for mining Ethereum, as well as most of the optimizations involved in maximizing profitability.'
 layout: post
-guid: 'http://www.ckode.dk/?p=385'
-permalink: /crypto-currency/getting-started-mining-ethereum-on-your-graphics-cards/
 categories:
     - 'Crypto currency'
 ---

@@ -1,15 +1,6 @@
 ---
-id: 410
 title: 'DevOps: Automating pushing your GitHub project to NuGet'
-date: '2021-03-07T10:45:26+01:00'
-author: Steffen
 layout: post
-guid: 'https://www.ckode.dk/?p=410'
-permalink: /programming/devops-automating-pushing-your-github-project-to-nuget/
-categories:
-    - Programming
-tags:
-    - CI/CD
 ---
 
 I recently set about updating some of my .NET Framework projects to .NET Standard 2.0, as I wanted to support both the “old” .NET Framework, as well as .NET Core. In doing so I also wanted to push new NuGet packages of the .NET Standard version, so others can benefit from these projects as well.

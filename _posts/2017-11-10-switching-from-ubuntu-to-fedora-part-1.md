@@ -1,14 +1,6 @@
 ---
-id: 379
 title: 'Switching from Ubuntu to Fedora &#8211; Part 1'
-date: '2017-11-10T14:26:30+01:00'
-author: Steffen
-excerpt: "I've been running Ubuntu \"server\" for quite some time on my workstation now, and lately the upgrade to 17.10 completely broke it.\r\nSo I figured I'd try something else, and as Fedora had a \"minimal install\" option, I immediately fell in love."
 layout: post
-guid: 'http://www.ckode.dk/?p=379'
-permalink: /linux/switching-from-ubuntu-to-fedora-part-1/
-categories:
-    - Linux
 ---
 
 I’ve been running Ubuntu “server” for quite some time on my workstation now, and lately the upgrade to 17.10 completely broke it. (I did a “do-release-upgrade”, things might have been different with a clean installation)

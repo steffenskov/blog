@@ -1,14 +1,6 @@
 ---
-id: 381
 title: 'Samsung Tizen disconnects or freeze when playing DLNA content: How to fix'
-date: '2017-11-12T09:46:06+01:00'
-author: Steffen
-excerpt: "I've recently acquired a Samsung Tizen based TV, and much to my dismay it has this very annoying bug, where it'll either disconnect from the DLNA source, or just freeze the video, when playing anything over DLNA.\r\n\r\nI finally discovered a fix for the problem, however :-)"
 layout: post
-guid: 'http://www.ckode.dk/?p=381'
-permalink: /smart-tv/samsung-tizen-disconnects-or-freeze-when-playing-dlna-content-how-to-fix/
-categories:
-    - 'Smart TV'
 ---
 
 I’ve recently acquired a Samsung Tizen based TV, and much to my dismay it has this very annoying bug, where it’ll either disconnect from the DLNA source, or just freeze the video, when playing anything over DLNA.  

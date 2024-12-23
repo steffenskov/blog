@@ -1,14 +1,6 @@
 ---
-id: 257
 title: 'Making Windows run in UEFI mode with Secure Boot'
-date: '2015-02-16T22:46:39+01:00'
-author: Steffen
-excerpt: 'Here I''ll go over how you enable UEFI mode (and with it Secure Boot), as well as why you want to do this.'
 layout: post
-guid: 'http://www.ckode.dk/?p=257'
-permalink: /desktop-machines/making-windows-run-in-uefi-mode-with-secure-boot/
-categories:
-    - 'Desktop machines'
 ---
 
 Here I’ll go over how you enable [UEFI](http://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface) mode (and with it [Secure Boot](http://en.wikipedia.org/wiki/Hardware_restriction#Secure_boot)), as well as why you want to do this.

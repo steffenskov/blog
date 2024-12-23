@@ -1,17 +1,6 @@
 ---
-id: 281
 title: 'My journey to Linux &#8211; Part 2'
-date: '2015-11-01T20:21:08+01:00'
-author: Steffen
-excerpt: "In part 2 I'll go over the installation process as well as getting hardware accelerated full disk encryption running, using my Samsung EVO 850's SED (Self Encrypting Drive) feature.\r\n\r\nI ran into the common \"grub-efi-amd64-signed failed to install into /target/\" error message, as well as \"Not authorized\" when trying to encrypt my drives. Both of which I finally solved."
 layout: post
-guid: 'http://www.ckode.dk/?p=281'
-permalink: /linux/my-journey-to-linux-part-2/
-categories:
-    - Linux
-tags:
-    - Encryption
-    - Linux
 ---
 
 In part 2 I’ll go over the installation process as well as getting hardware accelerated full disk encryption running, using my Samsung 850 EVO’s SED (Self Encrypting Drive) feature.

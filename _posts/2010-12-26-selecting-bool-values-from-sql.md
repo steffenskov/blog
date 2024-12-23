@@ -1,16 +1,6 @@
 ---
-id: 162
 title: 'Selecting bool values from SQL'
-date: '2010-12-26T18:09:48+01:00'
-author: Steffen
-excerpt: "Every once in a while I have a query, where I need to select a boolean expression (e.g. CustomerID = 4)\r\n\r\nUsually you'll need to use CASE, however for certain queries there's a smarter way."
 layout: post
-guid: 'http://www.ckode.dk/?p=162'
-permalink: /programming/selecting-bool-values-from-sql/
-categories:
-    - Programming
-tags:
-    - SQL
 ---
 
 Every once in a while I have a query, where I need to select a boolean expression (e.g. CustomerID = 4).  

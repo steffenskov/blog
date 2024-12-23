@@ -1,14 +1,6 @@
 ---
-id: 383
 title: 'Getting started with crypto currency mining on your own desktop PC: Monero and Aeon'
-date: '2017-12-08T20:19:33+01:00'
-author: Steffen
-excerpt: "A lot of people have heard about Bitcoin by now, however mining it on a normal desktop PC is a complete waste of power and thus money. You need highly specialized hardware for Bitcoin today.\r\n\r\nSo instead you can mine some of the lesser currencies, that are still on the rise.\r\n\r\nI'll go over two currencies, which are very easy to get started on, AND are usually profitable on desktop PCs."
 layout: post
-guid: 'http://www.ckode.dk/?p=383'
-permalink: /crypto-currency/getting-started-with-crypto-currency-mining-on-your-own-desktop-pc/
-categories:
-    - 'Crypto currency'
 ---
 
 A lot of people have heard about Bitcoin by now, however mining it on a normal desktop PC is a complete waste of power and thus money. You need highly specialized hardware for Bitcoin today.
@@ -103,7 +95,8 @@ You’ll know whether this is necessary by reading the initial output as it star
 
 On Linux things are a bit more complicated, though not much 🙂  
 First off you want to edit the file `/etc/security/limits.conf` and add the following two lines to it:  
-`* soft memlock 262144<br></br>* hard memlock 262144`
+`* soft memlock 262144
+* hard memlock 262144`
 
 Then edit the file `/etc/sysctl.conf` and add the following line:  
 `vm.nr_hugepages=128`  

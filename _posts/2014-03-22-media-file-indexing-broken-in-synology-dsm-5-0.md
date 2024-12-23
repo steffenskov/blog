@@ -1,16 +1,6 @@
 ---
-id: 240
 title: 'Media file indexing broken in Synology DSM 5.0'
-date: '2014-03-22T19:34:15+01:00'
-author: Steffen
-excerpt: "Having just updated my Synology DS213j to DSM 5.0 I discovered that new media files were no longer being indexed.\r\n\r\nThis in turn meant my DLNA was worthless, since new content would never index and thus never show.\r\n\r\nApparently this issue only occurs when you have encrypted at least one shared folder (even though it's not used for media files, and not configured to be indexed)\r\n\r\nSynology has yet to come up with a proper fix for this, so until they do you can fix it like this:"
 layout: post
-guid: 'http://www.ckode.dk/?p=240'
-permalink: /server-configuration/media-file-indexing-broken-in-synology-dsm-5-0/
-categories:
-    - 'Server configuration'
-tags:
-    - Synology
 ---
 
 Having just updated my Synology DS213j to DSM 5.0 I discovered that new media files were no longer being indexed.

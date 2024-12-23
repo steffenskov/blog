@@ -1,16 +1,6 @@
 ---
-id: 185
 title: 'Transactions inside stored procedures causing mysterious deadlocks'
-date: '2011-10-05T18:23:21+01:00'
-author: Steffen
-excerpt: "I recently had an issue with a website timing out a ton of stored procedures because of deadlocks.\r\nLooking back in the error log, I could see it all began when it failed inside the given SP with an arithmetic overflow.\r\nThis would normally be no big deal - however this time, it occurred inside an explicit transaction..."
 layout: post
-guid: 'http://www.ckode.dk/?p=185'
-permalink: /programming/transactions-inside-stored-procedures-causing-mysterious-deadlocks/
-categories:
-    - Programming
-tags:
-    - SQL
 ---
 
 I recently had an issue with a website timing out a ton of stored procedures because of deadlocks.

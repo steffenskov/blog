@@ -1,16 +1,6 @@
 ---
-id: 259
 title: 'How to enable Windows eDrive encryption for SSDs'
-date: '2015-03-01T17:56:23+01:00'
-author: Steffen
-excerpt: "As you probably know a lot of SSDs are sold as SED: \"Self Encrypting Device\", what this means is that the SSD can handle encryption itself, so your CPU doesn't have to spend cycles doing it. This in turn actually means NO LOSS of performance, because the SSD is already encrypting all its content, it just doesn't have a password set yet.\r\n\r\n \r\n\r\nHowever enabling it on a desktop PC hasn't always been easy, in fact it's just recently with Windows 8 and the eDrive function, that it's become somewhat simple to do."
 layout: post
-guid: 'http://www.ckode.dk/?p=259'
-permalink: /desktop-machines/how-to-enable-windows-edrive-encryption-for-ssds/
-categories:
-    - 'Desktop machines'
-tags:
-    - Encryption
 ---
 
 As you probably know a lot of SSDs are sold as [SED: “Self Encrypting Device”](http://en.wikipedia.org/wiki/Hardware-based_full_disk_encryption), what this means is that the SSD can handle encryption itself, so your CPU doesn’t have to spend cycles doing it. This in turn actually means NO LOSS of performance, because the SSD is already encrypting all its content, it just doesn’t have a password set yet.

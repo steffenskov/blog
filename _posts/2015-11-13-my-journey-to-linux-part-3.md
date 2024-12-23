@@ -1,16 +1,6 @@
 ---
-id: 287
 title: 'My journey to Linux &#8211; Part 3'
-date: '2015-11-13T22:53:43+01:00'
-author: Steffen
-excerpt: 'In Part 3 I go over mounting my Synology NAS, which proved trickier than I anticipated, as well as connecting to a Juniper VPN.'
 layout: post
-guid: 'http://www.ckode.dk/?p=287'
-permalink: /linux/my-journey-to-linux-part-3/
-categories:
-    - Linux
-tags:
-    - Linux
 ---
 
 In Part 3 I go over mounting my Synology NAS, which proved trickier than I anticipated, as well as connecting to a Juniper VPN.
@@ -74,13 +64,25 @@ Now this further increased stability, but still didn’t solve it a 100%. What I
 So to sum it up: If you need stable mounting of **CIFS** (samba protocol) I’d recommend doing it similarly. Here are my **fstab** and script content:
 
 **Fstab:**  
-`# fstab<br></br>#<br></br>//192.168.0.5/music	/mnt/Music	cifs	noauto,uid=steffen,gid=steffen,username=steffen,password=MYPASSWORD,iocharset=utf8	0	0<br></br>//192.168.0.5/video	/mnt/Videos	cifs	noauto,uid=steffen,gid=steffen,username=steffen,password=MYPASSWORD,iocharset=utf8	0	0<br></br># and so forth<br></br>`
+`# fstab
+#
+//192.168.0.5/music	/mnt/Music	cifs	noauto,uid=steffen,gid=steffen,username=steffen,password=MYPASSWORD,iocharset=utf8	0	0
+//192.168.0.5/video	/mnt/Videos	cifs	noauto,uid=steffen,gid=steffen,username=steffen,password=MYPASSWORD,iocharset=utf8	0	0
+# and so forth
+`
 
 Admittedly it would be prettier to use a credentials file instead of having my username/password in plain text inside **fstab**. But I’m the only user of the PC, and the entire SSD is encrypted, so I took the lazy route. If you’re on a multi user PC always use a credentials file instead as **fstab** can be read by anyone.  
 Do also note that it’s supposed to be only 2 lines, my blog is just too narrow for the text, so it wraps 🙁
 
 **Bind script:**  
-`#!/bin/sh -e<br></br>mount /mnt/Music<br></br>mount /mnt/Videos<br></br># and so forth<br></br>mount --bind /mnt/Music /home/steffen/Music<br></br>mount --bind /mnt/Videos /home/steffen/Videos<br></br># and so forth<br></br>`
+`#!/bin/sh -e
+mount /mnt/Music
+mount /mnt/Videos
+# and so forth
+mount --bind /mnt/Music /home/steffen/Music
+mount --bind /mnt/Videos /home/steffen/Videos
+# and so forth
+`
 
 Doing this I now have no problems with automatically mounting my NAS 🙂
 
@@ -107,6 +109,8 @@ Openconnect may ask you if you want to accept a certificate (usually the VPNs us
 And finally to speed things up slightly, you can add `--u USERNAME` with your username, to avoid having to enter it.
 
 I’d recommend tossing the entire thing into a bash script for convenience. Mine looks like this:  
-`#!/bin/bash<br></br>sudo openconnect --juniper --no-cert-check --u steffen URL<br></br>`
+`#!/bin/bash
+sudo openconnect --juniper --no-cert-check --u steffen URL
+`
 
 That was all for this time, next time I’ll look at installing my printer as well as getting my shortcuts similar to Windows.

@@ -1,17 +1,6 @@
 ---
-id: 123
 title: 'Accessing session in HttpHandlers'
-date: '2010-11-09T19:20:54+01:00'
-author: Steffen
-excerpt: "In ASP.Net HttpHandlers cannot access the session state by default, in order to enable them to do so, you need to implement an interface.\r\n\r\nHowever this is rather simple, since the interface is just a \"marker interface\" as MSDN calls it. Here's how to do it."
 layout: post
-guid: 'http://www.ckode.dk/?p=123'
-permalink: /programming/accessing-session-in-httphandlers/
-categories:
-    - Programming
-tags:
-    - ASP.Net
-    - 'C#'
 ---
 
 In ASP.Net HttpHandlers cannot access the session state by default, in order to enable them to do so, you need to implement an interface.

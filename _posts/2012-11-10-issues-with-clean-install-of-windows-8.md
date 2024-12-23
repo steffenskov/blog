@@ -1,16 +1,6 @@
 ---
-id: 207
 title: 'Issues with clean install of Windows 8'
-date: '2012-11-10T12:21:45+01:00'
-author: Steffen
-excerpt: "If you haven't noticed, Windows 8 upgrade licenses are currently dirt cheap, going for around 40$ at <a href=\"http://www.windows.com\" target=\"_blank\">www.windows.com</a>.\r\n\r\nAt that price I couldn't help but get it.\r\n\r\nInstalling it gave me 3 issues I believe others may face, so here's how to fix those."
 layout: post
-guid: 'http://www.ckode.dk/?p=207'
-permalink: /desktop-machines/issues-with-clean-install-of-windows-8/
-categories:
-    - 'Desktop machines'
-tags:
-    - 'Windows 8'
 ---
 
 If you haven’t noticed, Windows 8 upgrade licenses are currently dirt cheap, going for around 40$ at [www.windows.com](http://www.windows.com).
